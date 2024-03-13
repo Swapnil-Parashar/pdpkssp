@@ -8,7 +8,7 @@
                 <SwiperSlide v-for="slider in sliders">
                     <div v-if="slider.link">
                         <a :href="slider.link">
-                            <img class="w-full rounded-2xl" :src="slider.image" alt="banner" loading="lazy">
+                            <img class="w-full rounded-2xl" :src="slider.image" alt="banner0" loading="lazy">
                         </a>
                     </div>
                     <div v-else>
