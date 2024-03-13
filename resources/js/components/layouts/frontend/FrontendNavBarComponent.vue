@@ -34,11 +34,11 @@
                         </li>
 
                         <li class="header-nav-item">
-                            <button type="button" class="header-nav-menu down-arrow">
+                            <button type="button" class="header-nav-menu down-arrow" @click="toggleDropdown">
                                 {{ $t('label.categories') }}
                             </button>
                             <div
-                                class="fixed top-[64px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300">
+                                class="fixed top-[64px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300" v-show="dropdownOpen">
                                 <div class="container">
                                     <div class="w-full rounded-b-2xl shadow-paper bg-white">
                                         <nav class="w-full flex items-center justify-center">
@@ -104,7 +104,7 @@
                 <!-- Mobile Search Start -->
 
                 <!-- Language Start -->
-                <!-- <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
+                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
                      class="relative group hidden lg:block">
                     <button type="button" class="flex items-center gap-2 py-5 down-arrow">
                         <img :src="language.image" alt="language" class="w-4 h-4 rounded-full" loading="lazy" />
@@ -119,7 +119,7 @@
                             <span class="text-sm font-medium capitalize flex-auto">{{ LoopLanguage.name }}</span>
                         </li>
                     </ul>
-                </div> -->
+                </div>
                 <!-- Language End -->
 
                 <!-- Wishlist Start -->
