@@ -34,7 +34,7 @@
                         </li>
 
                         <li class="header-nav-item">
-                            <button type="button" class="header-nav-menu down-arrow">
+                            <button class="header-nav-menu down-arrow">
                                 {{ $t('label.categories') }}
                             </button>
                             <div
