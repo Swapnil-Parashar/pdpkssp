@@ -104,7 +104,7 @@
                 <!-- Mobile Search Start -->
 
                 <!-- Language Start -->
-                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
+                <!-- <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
                      class="relative group hidden lg:block">
                     <button type="button" class="flex items-center gap-2 py-5 down-arrow">
                         <img :src="language.image" alt="language" class="w-4 h-4 rounded-full" loading="lazy" />
@@ -119,7 +119,7 @@
                             <span class="text-sm font-medium capitalize flex-auto">{{ LoopLanguage.name }}</span>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- Language End -->
 
                 <!-- Wishlist Start -->
