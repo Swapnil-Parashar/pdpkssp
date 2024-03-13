@@ -34,11 +34,11 @@
                         </li>
 
                         <li class="header-nav-item">
-                            <button type="button" class="header-nav-menu down-arrow" @click="toggleDropdown">
+                            <button type="button" class="header-nav-menu down-arrow">
                                 {{ $t('label.categories') }}
                             </button>
                             <div
-                                class="fixed top-[64px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300" v-show="dropdownOpen">
+                                class="fixed top-[64px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300">
                                 <div class="container">
                                     <div class="w-full rounded-b-2xl shadow-paper bg-white">
                                         <nav class="w-full flex items-center justify-center">
