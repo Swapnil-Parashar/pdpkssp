@@ -40,7 +40,7 @@
                             <div
                                 class="fixed top-[64px] left-0 z-10 w-full origin-top scale-y-0 transition-all duration-300">
                                 <div class="container">
-                                    <div class="w-full shadow-paper bg-white">
+                                    <div class="w-full rounded-b-2xl shadow-paper bg-white">
                                         <nav class="w-full flex items-center justify-center">
                                             <router-link
                                                 v-for="(category, index) in categories"
