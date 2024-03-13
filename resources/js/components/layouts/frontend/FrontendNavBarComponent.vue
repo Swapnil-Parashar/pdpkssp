@@ -25,13 +25,7 @@
                 <!-- MenuBar Start -->
                 <nav class="header-nav hidden lg:block">
                     <ul class="header-nav-list">
-                        <li class="header-nav-item">
-                            <router-link class="header-nav-menu"
-                                         :class="checkIsPathAndRoutePathSame('/home') ? 'router-link-active router-link-exact-active' : ''"
-                                         :to="{ name: 'frontend.home' }">
-                                {{ $t("label.home") }}
-                            </router-link>
-                        </li>
+                        
 
                         <li class="header-nav-item">
                             <button type="button" class="header-nav-menu down-arrow">
