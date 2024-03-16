@@ -8,7 +8,7 @@
                     <h2 class="text-2xl sm:text-4xl font-bold capitalize">
                         {{ productSection.name }}
                     </h2>
-                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 rounded-3xl capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
                         {{ $t('label.show_more') }}
                     </router-link>
                 </div>
@@ -21,7 +21,7 @@
 
         <div v-for="(promotion, promotionKey) in promotions" class="p-0 m-0">
             <section v-if="key === promotionKey" class="mb-10 sm:mb-20">
-                <div class="container">
+                <div class="coustom-container">
                     <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}">
                         <img class="w-full" :src="promotion.preview" alt="promotion" loading="lazy">
                     </router-link>
@@ -32,12 +32,12 @@
 
     <div class="p-0 m-0" v-else-if="productSections.length > 0" v-for="productSection in productSections">
         <section class="mb-10 sm:mb-20" v-if="productSection.products.length > 0">
-            <div class="container">
+            <div class="coustom-container">
                 <div class="flex items-center justify-between gap-4 mb-5 sm:mb-7">
                     <h2 class="text-2xl sm:text-4xl font-bold capitalize">
                         {{ productSection.name }}
                     </h2>
-                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 rounded-3xl capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
+                    <router-link v-if="productSections.length === 8" :to="{name: 'frontend.productSection.products', params: { slug: productSection.slug }}" class="py-2 px-4 text-sm sm:py-3 sm:px-6 capitalize sm:text-base font-semibold whitespace-nowrap bg-primary-slate text-primary transition-all duration-300 hover:bg-primary hover:text-white">
                         {{ $t('label.show_more') }}
                     </router-link>
                 </div>
@@ -50,9 +50,9 @@
 
     <div class="p-0 m-0" v-else-if="promotions.length > 0">
         <section v-for="promotion in promotions" class="mb-10 sm:mb-20">
-            <div class="container">
+            <div class="coustom-container">
                 <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}">
-                    <img class="w-full rounded-3xl" :src="promotion.preview" alt="promotion" loading="lazy">
+                    <img class="w-full" :src="promotion.preview" alt="promotion" loading="lazy">
                 </router-link>
             </div>
         </section>
