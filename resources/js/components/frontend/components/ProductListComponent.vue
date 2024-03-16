@@ -19,7 +19,7 @@
 
         <div class="px-1 sm:px-0 pt-4 pb-2">
             <h3 class="capitalize text-base font-semibold whitespace-nowrap transition-all duration-300 hover:text-primary">
-                <router-link class="block overflow-hidden text-ellipsis"
+                <router-link class="block overflow-hidden"
                              :to="{ name: 'frontend.product.details', params: { slug: product.slug }}">
                     {{ product.name }}
                 </router-link>

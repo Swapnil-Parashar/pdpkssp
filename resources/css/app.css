@@ -357,7 +357,7 @@
     .db-breadcrumb-link { @apply transition text-slate-600 hover:text-primary after:content-['/'] after:px-1.5 after:text-paragraph }
 
     /* TABS */
-    .db-tab-btn { @apply w-full flex items-center text-[15px] capitalize text-left gap-3 py-2 px-3 rounded border-b last:border-none transition border-slate-100 hover:bg-slate-100 }
+    .db-tab-btn { @apply w-full flex items-center text-[15px] capitalize text-left gap-3 py-2 px-3 rounded border-b last:border-none transition border-slate-100 hover:bg-slate-100 whitespace-normal }
     .db-tab-btn i { @apply text-lg }
     .db-tab-btn.active { @apply !text-primary !bg-primary/5 }
     .db-tab-div { @apply hidden }
@@ -366,7 +366,7 @@
     .db-tab-sub-div.active { @apply block }
     .db-tab-sub-btn.active { @apply !text-white !bg-primary }
 
-    .db-tabBtn { @apply w-full flex items-center justify-center gap-2 rounded sm:rounded-b-none sm:rounded-t capitalize py-2.5 sm:py-3 px-3 text-sm border border-transparent sm:border-b-primary/50 transition hover:bg-gray-100 hover:text-primary }
+    .db-tabBtn { @apply w-full flex items-center justify-center gap-2 rounded sm:rounded-b-none sm:rounded-t capitalize py-2.5 sm:py-3 px-3 text-sm border border-transparent sm:border-b-primary/50 transition hover:bg-gray-100 hover:text-primary whitespace-normal }
     .db-tabBtn.active { @apply text-primary border-primary/50 sm:border-b-white bg-primary/5 sm:bg-white }
     .db-tabDiv { @apply hidden rounded sm:rounded-t-none sm:rounded-b py-3 px-4 sm:py-4 sm:px-5 text-sm leading-6 shadow-db-card border sm:border-x sm:border-b border-primary/50 sm:border-t-white bg-white }
     .db-tabDiv.active { @apply block }
