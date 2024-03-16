@@ -1,7 +1,7 @@
 <template>
     <LoadingComponent :props="loading" />
-    <section class="mb-10 sm:mb-10">
-        <div class="container">
+    <section class="">
+        <div class="coustom-container">
             <Swiper v-if="sliders.length > 0" :slides-per-view="1" :speed="1000" :loop="true" :navigation="true"
                     :pagination="{ clickable: true }" :autoplay="{ delay: 2500 }" :modules="modules"
                     class="banner-swiper">
