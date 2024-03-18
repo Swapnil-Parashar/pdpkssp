@@ -1,7 +1,7 @@
 <template>
 
     <header :class="isSticky === true ? 'fixed top-0 left-0 z-30 w-full mb-5 sm:mb-8 shadow-xs bg-white' : 'mb-5 sm:mb-8 shadow-xs bg-white'">
-        <div class="container py-3.5 px-4 lg:py-0">
+        <div class="container py-3.5 px-2 lg:py-0">
             <div class="flex items-center justify-between gap-5">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
@@ -27,7 +27,7 @@
                     <ul class="header-nav-list">
                         
 
-                        <li class="header-nav-item">
+                        <!-- <li class="header-nav-item">
                             <button type="button" class="header-nav-menu down-arrow">
                                 {{ $t('label.categories') }}
                             </button>
@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
 
                         <li class="header-nav-item">
                             <router-link class="header-nav-menu"
