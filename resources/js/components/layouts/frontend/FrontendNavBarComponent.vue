@@ -101,14 +101,14 @@
              
              
                
-    <div class="hidden md:flex call-block__text-wrapper items-center">
-        <div class="fas fa-phone-volume text-2xl mr-4" aria-hidden="true"></div>
+    
+    <div class="hidden lg:block call-block__text-wrapper items-center">
+        <div class="fas fa-phone-volume text-2xl mr-2 text-primary" aria-hidden="true"></div>
         <div class="call-block__wording">
-            <div class="title text-base font-bold">Call 01268 744 479</div>
-            <div class="text-sm">to talk to an expert</div>
+            <div class="title text-base font-bold text-primary">Call 01268 744 479</div>
+            <div class="text-sm mt-1">to talk to an expert</div>
         </div>
     </div>
-
 
 
 
