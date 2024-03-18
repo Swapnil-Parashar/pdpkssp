@@ -99,13 +99,16 @@
 
                 <!-- Call now -->
              
-    <div class="call-block__text-wrapper flex items-center">
-        <div class="fas fa-phone-volume mr-2" aria-hidden="true"></div>
+             
+               
+    <div class="hidden md:flex call-block__text-wrapper items-center">
+        <div class="fas fa-phone-volume text-2xl mr-4" aria-hidden="true"></div>
         <div class="call-block__wording">
-            <div class="title text-lg font-bold">Call 01268 744 479</div>
+            <div class="title text-base font-bold">Call 01268 744 479</div>
             <div class="text-sm">to talk to an expert</div>
         </div>
     </div>
+
 
 
 
