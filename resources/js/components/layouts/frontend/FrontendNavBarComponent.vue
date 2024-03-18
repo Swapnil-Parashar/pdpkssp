@@ -97,24 +97,21 @@
                 </form>
                 <!-- Mobile Search Start -->
 
-                <!-- Language Start -->
-                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE"
-                     class="relative group hidden lg:block">
-                    <button type="button" class="flex items-center gap-2 py-5 down-arrow">
-                        <img :src="language.image" alt="language" class="w-4 h-4 rounded-full" loading="lazy" />
-                        <span class="font-semibold capitalize">{{ language.name }}</span>
-                    </button>
-
-                    <ul class="w-40 absolute top-16 ltr:right-0 rtl:left-0 shadow-paper rounded-lg z-10 p-2 bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
-                        <li v-for="(LoopLanguage, index) in languages" :key="index"
-                            @click.prevent="changeLanguage(LoopLanguage.id, LoopLanguage.code)"
-                            class="flex items-center gap-3 px-2 py-1.5 rounded-lg relative w-full cursor-pointer transition-all duration-300 hover:bg-slate-100">
-                            <img :src="LoopLanguage.image" alt="flags" class="w-4 flex-shrink-0" loading="lazy" />
-                            <span class="text-sm font-medium capitalize flex-auto">{{ LoopLanguage.name }}</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Language End -->
+                <!-- Call now -->
+                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE" class="dropdown-group relative">
+                        <button @mouseover="showDropdown = true" @mouseleave="showDropdown = false" class="dropdown-btn flex items-center gap-2 h-9 px-3 rounded-lg bg-[#FFEDF4]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M17.293 10.293a1 1 0 0 0-1.414 0L11 14.586V7a1 1 0 1 0-2 0v7.586l-4.293-4.293a1 1 0 1 0-1.414 1.414l6 6a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="hidden md:block whitespace-nowrap text-xs font-medium capitalize text-heading">
+                                Call 01268 744 479
+                            </span>
+                        </button>
+                        <div v-if="showDropdown" class="p-2 min-w-[180px] rounded-lg shadow-xl absolute top-14 z-10 border border-gray-200 bg-white hidden dropdown-list">
+                            <p class="py-2 px-4 text-sm text-gray-700">Our experts are ready to assist you with any demand. Feel free to call.</p>
+                        </div>
+                    </div>
+                <!-- Call now End -->
 
                 <!-- Wishlist Start -->
                 <router-link class="hidden lg:block relative" :to="{ name: 'frontend.wishlist' }">
