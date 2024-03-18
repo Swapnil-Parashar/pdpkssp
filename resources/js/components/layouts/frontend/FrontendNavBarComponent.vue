@@ -98,17 +98,16 @@
                 <!-- Mobile Search Start -->
 
                 <!-- Call now -->
-                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE" class="dropdown-group relative">
-    <button class="dropdown-btn flex items-center gap-2 h-9 px-3 rounded-lg bg-[#FFEDF4]">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M17.293 10.293a1 1 0 0 0-1.414 0L11 14.586V7a1 1 0 1 0-2 0v7.586l-4.293-4.293a1 1 0 1 0-1.414 1.414l6 6a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
-        </svg>
-        <span class="hidden md:block whitespace-nowrap text-xs font-medium capitalize text-heading">
-            Call 01268 744 479
-        </span>
-    </button>
-    <p class="text-xs font-medium text-gray-700">To talk to an expert</p>
-</div>
+             
+    <div class="call-block__text-wrapper flex items-center">
+        <div class="fas fa-phone-volume mr-2" aria-hidden="true"></div>
+        <div class="call-block__wording">
+            <div class="title text-lg font-bold">Call 01268 744 479</div>
+            <div class="text-sm">to talk to an expert</div>
+        </div>
+    </div>
+
+
 
                 <!-- Call now End -->
 
