@@ -102,7 +102,7 @@
              
                
     
-    <div class="hidden lg:block call-block__text-wrapper items-center">
+    <div class="hidden lg:flex call-block__text-wrapper items-center">
         <div class="fas fa-phone-volume text-2xl mr-2 text-primary" aria-hidden="true"></div>
         <div class="call-block__wording">
             <div class="title text-base font-bold text-primary">Call 01268 744 479</div>
