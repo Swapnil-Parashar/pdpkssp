@@ -21,7 +21,7 @@
 
         <div v-for="(promotion, promotionKey) in promotions" class="p-0 m-0">
             <section v-if="key === promotionKey" class="mb-10 sm:mb-20">
-                <div class="coustom-container">
+                <div class="container">
                     <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}">
                         <img class="w-full" :src="promotion.preview" alt="promotion" loading="lazy">
                     </router-link>
