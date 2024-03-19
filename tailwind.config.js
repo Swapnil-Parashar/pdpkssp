@@ -14,6 +14,9 @@ module.exports = {
                 "icon": ["var(--icon-font)"],
                 "awesome": ["'Font Awesome 6 Free'"],
             },
+            width: {
+                '40rem': '40rem',
+              },
             screens: {
                 'mobile': {'min': '0px', 'max': '640px'},
                 'tablet': {'min': '641px', 'max': '767px'},
