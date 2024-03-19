@@ -105,7 +105,7 @@
     <div class="hidden lg:flex call-block__text-wrapper items-center">
         <div class="fas fa-phone-volume text-lg mr-2 text-secondary" aria-hidden="true"></div>
         <div class="call-block__wording">
-            <div class="title text-sm font-bold text-secondary">Call 620546 7465</div>
+            <div class="title text-sm font-bold text-secondary">Call 6205467465</div>
             <div class="text-xs -mt-1">to talk to an expert</div>
         </div>
     </div>
