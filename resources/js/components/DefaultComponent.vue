@@ -35,7 +35,7 @@ import FrontendMobileCategoryComponent from "./layouts/frontend/FrontendMobileCa
 import FrontendMobileAccountComponent from "./layouts/frontend/FrontendMobileAccountComponent";
 import FrontendMobileSideBarComponent from "./layouts/frontend/FrontendMobileSideBarComponent";
 import FrontendCookiesComponent from "./layouts/frontend/FrontendCookiesComponent";
-import TopCategoryComponent from "../home/TopCategoryComponent";
+import TopCategoryComponent from "./frontend/home/TopCategoryComponent";
 export default {
     name: "DefaultComponent",
     components: {
