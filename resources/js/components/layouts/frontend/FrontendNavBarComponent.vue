@@ -91,7 +91,7 @@
                 <!-- MenuBar End -->
 
                 <!-- Mobile Search Start -->
-                <form @submit.prevent="search" class="hidden w-full lg:w-40rem h-10 rounded-3xl lg:flex items-center gap-2 px-4 border border-gray-100 bg-gray-100 transition-all duration-300 focus-within:border-primary focus-within:bg-white">
+                <form @submit.prevent="search" class="hidden w-full lg:40rem h-10 rounded-3xl lg:flex items-center gap-2 px-4 border border-gray-100 bg-gray-100 transition-all duration-300 focus-within:border-primary focus-within:bg-white">
                     <button class="lab-line-search text-lg flex-shrink-0"></button>
                     <input v-model="searchProduct" class="w-full h-full" type="search" :placeholder="$t('label.search') + '...'"/>
                 </form>
