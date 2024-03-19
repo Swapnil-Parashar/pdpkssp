@@ -1,6 +1,6 @@
 <template>
-    <!-- <TopCategoryComponent /> -->
-
+    <TopCategoryComponent />
+    
     <SliderComponent />
 
     <CategoryComponent />
@@ -28,11 +28,11 @@ import ProductSectionComponent from "./ProductSectionComponent.vue";
 import FlashSaleComponent from "./FlashSaleComponent.vue";
 import ProductBrandComponent from "./ProductBrandComponent.vue";
 import MostPopularComponent from "./MostPopularComponent.vue";
-// import TopCategoryComponent from "./TopCategoryComponent.vue";
+import TopCategoryComponent from "./TopCategoryComponent.vue";
 export default {
     name: "HomeComponent",
     components: {
-        // TopCategoryComponent,
+        TopCategoryComponent,
         MostPopularComponent,
         FlashSaleComponent,
         BenefitComponent,
