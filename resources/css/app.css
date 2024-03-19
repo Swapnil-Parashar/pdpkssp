@@ -34,7 +34,7 @@
     /*===============================
             LAYOUTS PART START
     ================================*/
-    .container { @apply max-w-6xl mx-auto px-3 sm:px-4 }
+    .container { @apply max-w-7xl mx-auto px-3 sm:px-4 }
     .coustom-container { @apply w-full mx-auto px-3 sm:px-4 }
 
     .row { @apply flex flex-wrap -m-3 }
