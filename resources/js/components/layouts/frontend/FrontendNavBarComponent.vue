@@ -352,8 +352,8 @@
             </div>
         </div>
         <div class="fixed top-[64px] left-0 z-10 w-full origin-top">
-            <div class="container">
-                <div class="w-full rounded-b-2xl shadow-paper bg-white">
+            <div class="coustom-container">
+                <div class="w-full">
                     <nav class="w-full flex items-center justify-center">
                         <router-link
                             v-for="(category, index) in categories"
