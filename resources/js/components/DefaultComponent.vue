@@ -1,6 +1,7 @@
 <template>
     <div v-if="theme === 'frontend'">
         <FrontendNavbarComponent/>
+        <TopCategoryComponent/>
         <FrontendCartComponent/>
         <router-view></router-view>
         <FrontendMobileSideBarComponent />
@@ -34,11 +35,12 @@ import FrontendMobileCategoryComponent from "./layouts/frontend/FrontendMobileCa
 import FrontendMobileAccountComponent from "./layouts/frontend/FrontendMobileAccountComponent";
 import FrontendMobileSideBarComponent from "./layouts/frontend/FrontendMobileSideBarComponent";
 import FrontendCookiesComponent from "./layouts/frontend/FrontendCookiesComponent";
-
+import TopCategoryComponent from "./frontend/home/TopCategoryComponent";
 export default {
     name: "DefaultComponent",
     components: {
         FrontendMobileSideBarComponent,
+        TopCategoryComponent,
         FrontendMobileAccountComponent,
         FrontendMobileCategoryComponent,
         FrontendMobileNavBarComponent,
