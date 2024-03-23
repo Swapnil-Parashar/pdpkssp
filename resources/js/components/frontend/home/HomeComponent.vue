@@ -7,7 +7,7 @@
 
     <PromotionComponent />
 
-    <!-- <ProductSectionComponent /> -->
+    <ProductSectionComponent />
 
     <MostPopularComponent />
 
