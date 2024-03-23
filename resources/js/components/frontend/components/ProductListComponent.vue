@@ -1,19 +1,19 @@
 <template>
     <div v-if="products.length > 0" v-for="product in products"
-         class="sm:p-2 rounded-2xl sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group">
-        <div class="relative overflow-hidden rounded-xl isolate">
-            <label class="capitalize text-xs font-semibold rounded-xl py-1 px-2 shadow-badge absolute top-3 left-3 z-10 bg-secondary text-white"
+         class="sm:p-2 sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group">
+        <div class="relative overflow-hidden isolate">
+            <label class="capitalize text-xs font-semibold py-1 px-2 shadow-badge absolute top-3 left-3 z-10 bg-secondary text-white"
                 v-if="product.is_offer && product.flash_sale">{{ $t('label.flash_sale') }}</label>
 
             <button type="button" @click.prevent="wishlist(product, product.wishlist = !product.wishlist)"
                     :class="product.wishlist ? 'lab-fill-heart text-primary' : 'lab-line-heart'"
-                    class="w-7 h-7 leading-7 rounded-full text-center text-base shadow-badge absolute top-3 right-3 z-10 bg-white">
+                    class="w-7 h-7 leading-7 text-center text-base shadow-badge absolute top-3 right-3 z-10 bg-white">
             </button>
 
-            <router-link class="overflow-hidden rounded-xl w-full"
+            <router-link class="overflow-hidden w-full"
                          :to="{ name: 'frontend.product.details', params: { slug: product.slug }}">
                 <img :src="product.cover" alt="product"
-                     class="w-full rounded-xl transition-all duration-300 group-hover:scale-105 group-hover:rotate-3" loading="lazy">
+                     class="w-full transition-all duration-300 group-hover:scale-105 group-hover:rotate-3" loading="lazy">
             </router-link>
         </div>
 
@@ -29,7 +29,6 @@
                 <div class="flex items-center gap-1">
                     <starRating
                         border-color="#FFBC1F"
-                        :rounded-corners="true"
                         :padding="2.5"
                         :border-width="2.5"
                         :star-size="9" class="mt-[2px]" inactive-color="#FFFFFF"
