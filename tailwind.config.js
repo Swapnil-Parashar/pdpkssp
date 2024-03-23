@@ -24,9 +24,13 @@ module.exports = {
                 'desktop': {'min': '1025px', 'max': '1280px'},
                 'monitor': {'min': '1281px', 'max': '1536px'},
                 'max-sm': {'min': '0px', 'max': '640px'},
+                'min-sm': {'min': '640px', 'max': '1536px'},
                 'max-md': {'min': '0px', 'max': '767px'},
+                'min-md': {'min': '767px', 'max': '1536px'},
                 'max-lg': {'min': '0px', 'max': '1024px'},
+                'min-lg': {'min': '1024px', 'max': '1536px'},
                 'max-xl': {'min': '0px', 'max': '1280px'},
+                'min-xl': {'min': '1280px', 'max': '1536px'},
                 'xh': {'min': '0px', 'max': '767px'},
             },
             colors: {

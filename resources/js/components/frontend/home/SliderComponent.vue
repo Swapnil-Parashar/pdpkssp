@@ -101,7 +101,7 @@
                     </div>
                     <div v-else>
                         <img
-                            class="w-full h-96"
+                            class="w-full min-md:h-96"
                             :src="slider.image"
                             alt="banner"
                             loading="lazy"
