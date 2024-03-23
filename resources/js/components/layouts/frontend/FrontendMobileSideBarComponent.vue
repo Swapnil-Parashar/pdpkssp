@@ -26,7 +26,7 @@
                     <router-link v-on:click="hideTarget('mobile-sidebar-canvas', 'canvas-active')" v-if="pages.length > 0" v-for="page in pages" :key="page" :to="{ name: 'frontend.page', params: { slug: page.slug } }" class="text-base font-medium capitalize py-3 border-b border-slate-100 text-heading">{{ page.title }}</router-link>
                 </nav>
 
-                <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE">
+                <!-- <div v-if="setting.site_language_switch === enums.activityEnum.ENABLE">
                     <button type="button" class="language-toggle flex items-center justify-start text-left gap-2 py-3 w-full border-b border-slate-100" @click="colspanHideShow($event, 'mobile-language-colspan')">
                         <img :src="language.image" alt="language" class="w-4 h-4 rounded-full" loading="lazy" />
                         <span class="font-medium capitalize flex-auto text-left text-heading">{{ language.name }}</span>
@@ -39,7 +39,7 @@
                             <span class="text-sm font-medium capitalize flex-auto text-heading">{{ LoopLanguage.name }}</span>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <h4 class="text-base font-bold capitalize mb-3 !text-heading">
                     {{ $t('label.contact') }}</h4>
