@@ -2,23 +2,8 @@
     <LoadingComponent :props="loading" />
     <section class="mb-5 sm:mb-3">
         <div class="bg-secondary mobile:hidden tablet:hidden">
-            <nav class="w-full flex items-center justify-center">
-                <!-- <router-link
-                    v-for="(category, index) in categories"
-                    :key="index"
-                    :to="{
-                        name: 'frontend.product',
-                        query: { category: category.slug },
-                    }"
-                    @mouseover.prevent="activeTab = 'category_' + category.slug"
-                    class="capitalize text-sm font-semibold tracking-wide px-5 py-4 transition-all duration-300 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0.5 before:bg-primary hover:text-primary"
-                    :class="{
-                        'text-white before:w-full before:transition-all before:duration-300':
-                            activeTab === 'category_' + category.slug,
-                    }"
-                >
-                    {{ category.name }}
-                </router-link> -->
+            <!-- <nav class="w-full flex items-center justify-center"> -->
+            <nav class="flex items-center justify-between gap-5">
                 <router-link
                     v-for="(category, index) in categories"
                     :key="index"
@@ -116,7 +101,7 @@
                     </div>
                     <div v-else>
                         <img
-                            class="w-full"
+                            class="w-full h-96"
                             :src="slider.image"
                             alt="banner"
                             loading="lazy"

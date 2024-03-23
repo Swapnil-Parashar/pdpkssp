@@ -2,8 +2,8 @@
     <header
         :class="
             isSticky === true
-                ? 'fixed top-0 left-0 z-30 w-full sm:mb-3 shadow-xs bg-white'
-                : 'sm:mb-3 shadow-xs bg-white'
+                ? 'fixed top-0 left-0 z-30 w-full sm:mb-0 shadow-xs bg-white'
+                : 'sm:mb-0 shadow-xs bg-white'
         "
     >
         <div class="container py-3.5 px-2 lg:py-0">

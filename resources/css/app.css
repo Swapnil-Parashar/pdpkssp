@@ -36,6 +36,7 @@
     ================================*/
     .container { @apply max-w-7xl mx-auto px-3 sm:px-4 }
     .coustom-container { @apply w-full mx-auto px-3 sm:px-4 }
+    .slider {@apply w-full mx-auto sm:px-4}
 
     .row { @apply flex flex-wrap -m-3 }
     .col-1 { @apply w-[8.33333333333%] p-3 }
