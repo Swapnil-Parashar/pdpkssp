@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="coustom-container">
+        <div class="slider">
             <Swiper
                 v-if="sliders.length > 0"
                 :slides-per-view="1"
