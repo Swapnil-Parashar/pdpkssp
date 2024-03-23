@@ -8,7 +8,7 @@
             </h2>
             <Swiper dir="ltr" :speed="1000" :loop="true" :navigation="true" :modules="modules" class="navigate-swiper" :breakpoints="breakpoints">
                 <SwiperSlide v-for="brand in brands" class="mobile:!w-[120px]">
-                    <router-link :to="{name: 'frontend.product', query:{ brand: brand.id }}" class="w-full rounded-2xl shadow-xs group border border-gray-100">
+                    <router-link :to="{name: 'frontend.product', query:{ brand: brand.id }}" class="w-full shadow-xs group border border-gray-100">
                         <figure class="w-full h-[120px] flex items-center justify-center">
                             <img :src="brand.cover" alt="brand" loading="lazy" class="w-14">
                         </figure>
