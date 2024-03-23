@@ -2,7 +2,7 @@
     <header
         :class="
             isSticky === true
-                ? 'fixed top-0 left-0 z-30 w-full sm:mb-8 shadow-xs bg-white'
+                ? 'fixed top-0 left-0 z-30 w-full sm:mb-3 shadow-xs bg-white'
                 : 'sm:mb-8 shadow-xs bg-white'
         "
     >
