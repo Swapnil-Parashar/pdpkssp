@@ -27,7 +27,7 @@
                         query: { category: category.slug },
                     }"
                     @mouseover.prevent="activeTab = 'category_' + category.slug"
-                    class="capitalize text-sm font-semibold tracking-wide px-5 py-4 transition-all duration-300 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0.5 before:bg-primary"
+                    class="text-white capitalize text-sm font-semibold tracking-wide px-5 py-4 transition-all duration-300 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0.5 before:bg-primary"
                     :class="{
                         'text-white before:w-full before:transition-all before:duration-300':
                             activeTab === 'category_' + category.slug,
@@ -45,24 +45,24 @@
                         block: activeTab === 'category_' + category.slug,
                         hidden: activeTab !== 'category_' + category.slug,
                     }"
-                    class="flex items-start gap-5 pb-5 border-t border-gray-200"
+                    class="text-white flex items-start gap-5 pb-5 border-t border-gray-200"
                 >
                     <div class="w-60 h-80 flex-shrink-0 pt-5 pl-5">
                         <img
-                            class="w-full h-full object-top object-cover rounded-lg"
+                            class="w-full h-full object-top object-cover rounded-lg text-white"
                             :src="category.cover"
                             alt="category"
                             loading="lazy"
                         />
                     </div>
-                    <div class="w-full h-80 thin-scrolling pt-5 pr-5">
+                    <div class="w-full h-80 thin-scrolling pt-5 pr-5 text-white">
                         <div class="w-full grid gap-5 grid-cols-3">
                             <div
                                 v-for="children in category.children"
                                 class="self-start"
                             >
                                 <h3
-                                    class="text-sm font-semibold capitalize pb-3 border-b border-slate-200"
+                                    class="text-sm font-semibold capitalize pb-3 border-b border-slate-200 text-white"
                                 >
                                     <router-link
                                         :to="{
