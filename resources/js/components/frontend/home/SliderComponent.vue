@@ -1,7 +1,7 @@
 <template>
     <LoadingComponent :props="loading" />
     <section class="mb-5 sm:mb-3">
-        <div class="bg-secondary mobile:hidden tablet:hidden">
+        <div class="bg-secondary lg:hidden">
             <!-- <nav class="w-full flex items-center justify-center"> -->
             <nav class="container flex items-center justify-between gap-5">
                 <router-link
