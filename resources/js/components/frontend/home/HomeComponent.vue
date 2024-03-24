@@ -5,7 +5,7 @@
 
     <CategoryComponent />
 
-    <FlashSaleComponent />
+    <!-- <FlashSaleComponent /> -->
 
     <PromotionComponent />
 

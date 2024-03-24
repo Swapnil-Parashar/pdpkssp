@@ -40,6 +40,7 @@
                 </SwiperSlide>
             </Swiper>
         </div>
+        <FlashSaleComponent />
     </section>
 </template>
 
@@ -51,6 +52,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import statusEnum from "../../../enums/modules/statusEnum";
 import LoadingComponent from "../components/LoadingComponent";
+import FlashSaleComponent from "./FlashSaleComponent.vue";
 
 export default {
     name: "CategoryComponent",
