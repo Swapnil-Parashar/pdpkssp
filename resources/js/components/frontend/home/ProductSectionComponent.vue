@@ -7,7 +7,7 @@
         v-for="(productSection, key) in productSections"
     >
         <section
-            class="mb-10 sm:mb-20"
+            class="mb-5 sm:mb-10"
             v-if="productSection.products.length > 0"
         >
             <div class="container">
