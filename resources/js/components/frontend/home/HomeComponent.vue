@@ -1,9 +1,11 @@
 <template>
     <TopCategoryComponent />
-    
+
     <SliderComponent />
 
     <CategoryComponent />
+
+    <FlashSaleComponent />
 
     <PromotionComponent />
 
@@ -11,15 +13,12 @@
 
     <MostPopularComponent />
 
-    <FlashSaleComponent />
-
     <ProductBrandComponent />
 
     <BenefitComponent />
 </template>
 
 <script>
-
 import SliderComponent from "./SliderComponent.vue";
 import CategoryComponent from "./CategoryComponent.vue";
 import PromotionComponent from "./PromotionComponent.vue";
@@ -40,7 +39,7 @@ export default {
         CategoryComponent,
         PromotionComponent,
         ProductSectionComponent,
-        ProductBrandComponent
-    }
+        ProductBrandComponent,
+    },
 };
 </script>
