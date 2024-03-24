@@ -5,7 +5,7 @@
 
     <CategoryComponent />
 
-    <PromotionComponent />
+    <!-- <PromotionComponent /> -->
 
     <ProductSectionComponent />
 

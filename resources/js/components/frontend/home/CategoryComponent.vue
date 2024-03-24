@@ -1,7 +1,7 @@
 <template>
     <LoadingComponent :props="loading" />
     <section v-if="categories.length > 0" class="sm:mb-5">
-        <div class="container">
+        <div class="container mt-10">
             <h2 class="text-2xl sm:text-4xl font-bold -mb-10">
                 {{ $t("label.browse_by_categories") }}
             </h2>

@@ -189,7 +189,7 @@
     .banner-swiper .swiper-pagination-bullet-active { @apply flex-shrink-0 w-4 opacity-100 }
 
     /* CATEGORY */
-    .navigate-swiper { @apply !pt-16 sm:!pt-20 !pb-10 }
+    .navigate-swiper { @apply !pt-5 sm:!pt-10 !pb-5 }
     .navigate-swiper .swiper-button-prev { @apply mobile:hidden w-10 h-10 leading-10 text-center rounded-full bg-primary-slate text-primary ltr:after:content-['\e072'] rtl:after:content-['\e071'] after:font-icon after:text-xl transition-all duration-300 hover:bg-primary hover:after:text-white top-6 ltr:left-auto ltr:right-12 rtl:right-auto rtl:left-12 }
     .navigate-swiper .swiper-button-next { @apply mobile:hidden w-10 h-10 leading-10 text-center rounded-full bg-primary-slate text-primary ltr:after:content-['\e071'] rtl:after:content-['\e072'] after:font-icon after:text-xl transition-all duration-300 hover:bg-primary hover:after:text-white top-6 ltr:right-0 rtl:left-0 }
     .navigate-swiper:hover .swiper-button-prev,
