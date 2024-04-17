@@ -96,7 +96,7 @@
                                 </div>
                             </div>
                         </li> -->
-
+<!-- 
                         <li class="header-nav-item">
                             <router-link
                                 class="header-nav-menu"
@@ -109,7 +109,7 @@
                             >
                                 {{ $t("label.offers") }}
                             </router-link>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
                 <!-- MenuBar End -->
