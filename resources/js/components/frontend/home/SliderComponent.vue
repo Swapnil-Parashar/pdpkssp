@@ -3,7 +3,7 @@
     <section class="mb-5 sm:mb-3">
         <div class="bg-secondary mobile:hidden tablet:hidden laptop:hidden">
             <!-- <nav class="w-full flex items-center justify-center"> -->
-            <nav class="container flex items-center justify-between gap-5">
+            <nav class="container sticky top-0 z-10  flex items-center justify-between gap-5">
                 <router-link
                     v-for="(category, index) in categories"
                     :key="index"

@@ -3,7 +3,7 @@
 
     <section v-if="promotions.length > 0" class="mb-5 sm:mb-10">
         <div class="container">
-            <Swiper dir="ltr" :speed="1000" class="ad-swiper" :breakpoints="breakpoints">
+            <Swiper dir="ltr" :speed="2000" class="ad-swiper" :breakpoints="breakpoints">
                 <SwiperSlide v-for="promotion in promotions" class="mobile:!w-52">
                     <router-link :to="{name: 'frontend.promotion.products', params: { slug: promotion.slug }}" class=" w-full">
                         <img class="w-full block" :src="promotion.cover" alt="promotion" loading="lazy">
