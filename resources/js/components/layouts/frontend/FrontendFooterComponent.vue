@@ -3,7 +3,7 @@
 
     <footer class="pt-12 bg-secondary mobile:hidden">
         <div class="container">
-            <div class="container mt-8">
+            <div class="container mt-4">
                 <div class="flex justify-center items-center gap-6 mb-4">
                     <!-- Payment Method Logos -->
                     <img
@@ -33,7 +33,7 @@
                     />
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-12 md:col-4 lg:col-5 mb-6 md:mb-0">
                     <div
                         class="tablet:text-center tablet:mx-auto w-full max-w-xs"
