@@ -3,6 +3,27 @@
 
     <footer class="pt-12 bg-secondary mobile:hidden">
         <div class="container">
+            <div class="container mt-8">
+                <div class="flex justify-center items-center gap-6">
+                    <!-- Payment Method Logos -->
+                    <img
+                        src="https://source.unsplash.com/random/100x50"
+                        alt="Payment Method"
+                        class="h-12"
+                    />
+                    <img
+                        src="https://source.unsplash.com/random/100x50"
+                        alt="Payment Method"
+                        class="h-12"
+                    />
+                    <img
+                        src="https://source.unsplash.com/random/100x50"
+                        alt="Payment Method"
+                        class="h-12"
+                    />
+                    <!-- Add more payment method logos here -->
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 md:col-4 lg:col-5 mb-6 md:mb-0">
                     <div
@@ -204,27 +225,6 @@
             </p>
         </div>
     </footer>
-    <div class="container mt-8">
-        <div class="flex justify-center items-center gap-6">
-            <!-- Payment Method Logos -->
-            <img
-                src="https://source.unsplash.com/random/100x50"
-                alt="Payment Method"
-                class="h-12"
-            />
-            <img
-                src="https://source.unsplash.com/random/100x50"
-                alt="Payment Method"
-                class="h-12"
-            />
-            <img
-                src="https://source.unsplash.com/random/100x50"
-                alt="Payment Method"
-                class="h-12"
-            />
-            <!-- Add more payment method logos here -->
-        </div>
-    </div>
 </template>
 
 <script>
