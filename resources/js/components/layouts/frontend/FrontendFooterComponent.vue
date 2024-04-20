@@ -208,16 +208,19 @@
         <div class="flex justify-center items-center gap-6">
             <!-- Payment Method Logos -->
             <img
-                src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-visa.svg"
-                alt="PayPal"
+                src="https://source.unsplash.com/random/100x50"
+                alt="Payment Method"
+                class="h-12"
             />
             <img
-                src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-visa.svg"
-                alt="Visa"
+                src="https://source.unsplash.com/random/100x50"
+                alt="Payment Method"
+                class="h-12"
             />
             <img
-                src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-visa.svg"
-                alt="Mastercard"
+                src="https://source.unsplash.com/random/100x50"
+                alt="Payment Method"
+                class="h-12"
             />
             <!-- Add more payment method logos here -->
         </div>
