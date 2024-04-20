@@ -6,7 +6,7 @@
                 : 'sm:mb-0 shadow-xs bg-white'
         "
     >
-        <div class="container py-3.5 lg:py-0">
+        <div class="container py-3.5 px-2 lg:py-0">
             <div class="flex items-center justify-between gap-5">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
