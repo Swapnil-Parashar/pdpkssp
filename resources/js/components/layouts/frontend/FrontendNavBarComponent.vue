@@ -3,7 +3,7 @@
         :class="
             isSticky === true
                 ? 'fixed top-0 left-0 z-30 w-full mb-12 sm:mb-12 shadow-xs bg-white'
-                : 'sm:mb-0 shadow-xs bg-white'
+                : 'sm:mb-12 shadow-xs bg-white'
         "
     >
         <div class="container mb-4 py-3.5 px-2 lg:py-0">
