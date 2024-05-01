@@ -31,7 +31,7 @@
                         <span
                             class="text-sm sm:text-xl font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
                         >
-                            {{ category.name }}
+                            {{ category.name.length }}
                             <span v-if="category.name.length < 15" class="text-white" id="conditional">
                                 ...........................
                             </span>
@@ -87,14 +87,7 @@ export default {
     },
     computed: {
         categories: function () {
-            return this.$store.getters["frontendProductCategory/lists"].map(
-                (category) => {
-                    // if (category.name.length < 15) {
-                    //     category.name += "            ";
-                    // }
-                    return category;
-                }
-            );
+            return this.$store.getters["frontendProductCategory/lists"];
         },
     },
 
