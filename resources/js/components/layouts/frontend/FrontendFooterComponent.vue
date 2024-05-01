@@ -202,52 +202,47 @@
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-visa.svg"
                     alt="Visa"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-mastercard.svg"
                     alt="Master Card"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-maestro.svg"
                     alt="Maestro"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-visa-electron.svg"
                     alt="Visa Electron"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-amex.svg"
                     alt="American Express"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-paypal.svg"
                     alt="PayPal"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-paypal-credit.svg"
                     alt="PayPal Credit"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-sage.svg"
                     alt="Sage"
-                    class="h-8"
+                    class="h-6"
                 />
                 <img
                     src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-apple-pay.svg"
                     alt="Apple Pay"
-                    class="h-8"
-                />
-                <img
-                    src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-klarna.svg"
-                    alt="Klarna"
-                    class="h-8"
+                    class="h-6"
                 />
             </div>
         </div>
