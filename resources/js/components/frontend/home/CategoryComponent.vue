@@ -32,9 +32,11 @@
                             class="text-sm sm:text-xl font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
                         >
                             {{ category.name }}
-                            <span class="text-white" v-if="category.name.length < 15"
-                                >...........................
-                            </span>
+                            <template v-if="category.name.length < 15">
+                                <span class="text-white"
+                                    >...........................
+                                </span>
+                            </template>
                         </span>
                     </router-link>
                 </SwiperSlide>
