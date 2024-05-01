@@ -2,11 +2,11 @@
     <header
         :class="
             isSticky === true
-                ? 'fixed top-0 left-0 z-30 w-full sm:mb-0 shadow-xs bg-white'
+                ? 'fixed top-0 left-0 z-30 w-full sm:mb-12 shadow-xs bg-white'
                 : 'sm:mb-0 shadow-xs bg-white'
         "
     >
-        <div class="container py-3.5 px-2 lg:py-0">
+        <div class="container mb-4 py-3.5 px-2 lg:py-0">
             <div class="flex items-center justify-between gap-5">
                 <!--  Logo & Mobile Responsive Start -->
                 <div class="flex items-center flex-shrink-0 gap-5">
@@ -356,7 +356,9 @@
                 </button>
                 <!-- Card Button End -->
             </div>
-            <div class="fixed top-[64px] left-0 z-10 w-full origin-top">
+
+            <!-- Category navbar -->
+            <div class="fixed top-[64px] left-0 z-30 w-full origin-top">
                 <div class="coustom-container">
                     <div
                         class="bg-secondary mobile:hidden tablet:hidden laptop:hidden"
