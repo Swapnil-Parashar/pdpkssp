@@ -86,7 +86,7 @@ export default {
             return this.$store.getters["frontendProductCategory/lists"].map(
                 (category) => {
                     if (category.name.length < 15) {
-                        category.name += "\n";
+                        category.name += "            ";
                     }
                     return category;
                 }
