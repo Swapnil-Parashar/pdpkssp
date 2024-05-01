@@ -206,9 +206,7 @@ export default {
     },
     computed: {
         categories: function () {
-            return this.$store.getters["frontendProductCategory/lists"].map(
-                (category) => category
-            );
+            return this.$store.getters["frontendProductCategory/lists"];
         },
     },
     methods: {
@@ -245,3 +243,4 @@ export default {
     },
 };
 </script>
+
