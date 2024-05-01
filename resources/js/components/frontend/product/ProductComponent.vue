@@ -1,6 +1,6 @@
 <template>
     <LoadingComponent :props="loading"/>
-    <section class="mb-10 sm:mb-20">
+    <section class="my-10 sm:mb-20">
         <div class="container">
             <CategoryBreadcrumbComponent
                 v-if="typeof $route.query.category !== 'undefined' && $route.query.category !== ''"
