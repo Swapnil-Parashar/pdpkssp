@@ -35,6 +35,9 @@
                             class="text-sm sm:text-xl font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
                         >
                             {{ category.name }}
+                            <span v-if="category.name.length < 15" class="text-white" id="conditional">
+                                ...........................
+                            </span>
                         </span>
                     </router-link>
                 </SwiperSlide>
