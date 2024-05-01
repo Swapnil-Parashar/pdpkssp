@@ -359,7 +359,7 @@
 
             <!-- Category navbar -->
             <div class="fixed top-[64px] left-0 z-30 w-full origin-top">
-                <div class="coustom-container">
+                <div >
                     <div
                         class="bg-secondary mobile:hidden tablet:hidden laptop:hidden"
                     >
