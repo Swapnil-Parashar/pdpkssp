@@ -32,6 +32,7 @@
                             class="text-sm sm:text-xl font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
                         >
                             {{ category.name }}
+                            <span class="text-white" >...............</span>
                         </span>
                     </router-link>
                 </SwiperSlide>
