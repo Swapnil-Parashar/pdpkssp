@@ -29,7 +29,7 @@
                             loading="lazy"
                         />
                         <span
-                            class="text-sm font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
+                            class="text-sm sm:text-xl font-medium capitalize text-center py-2 px-3 overflow-hidden block group-hover:text-primary flex-grow"
                         >
                             {{ category.name }}
                         </span>
@@ -83,9 +83,17 @@ export default {
     },
     computed: {
         categories: function () {
-            return this.$store.getters["frontendProductCategory/lists"];
+            return this.$store.getters["frontendProductCategory/lists"].map(
+                (category) => {
+                    if (category.name.length < 15) {
+                        category.name += "\n";
+                    }
+                    return category;
+                }
+            );
         },
     },
+
     mounted() {
         this.loading.isActive = true;
         this.$store
