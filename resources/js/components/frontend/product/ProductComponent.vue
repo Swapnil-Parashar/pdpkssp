@@ -23,7 +23,7 @@
                         class="lab-line-filter md:invisible flex-shrink-0 text-2xl w-9 h-9 leading-9 text-center rounded-full border border-primary text-primary md:hidden"></button>
             </div>
 
-            <div class="flex items-start border-t border-gray-100 max-md:border-none">
+            <!-- <div class="flex items-start border-t border-gray-100 max-md:border-none">
                 <div id="filter-canvas"
                      class="max-md:fixed max-md:inset-0 max-md:z-30 max-md:bg-black/50 max-md:transition-all max-md:duration-500 max-md:opacity-0 max-md:invisible">
                     <div
@@ -198,7 +198,7 @@
                     <PaginationComponent @pagination-change-page="products" :data="pagination" :limit="1"
                                          :keep-length="false"/>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
