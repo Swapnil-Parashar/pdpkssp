@@ -1,10 +1,10 @@
 <template>
     <LoadingComponent :props="loading"/>
-    <section class="my-10 sm:mb-20">
+    <section class="mb-10 sm:mb-20">
         <div class="container">
             <CategoryBreadcrumbComponent
                 v-if="typeof $route.query.category !== 'undefined' && $route.query.category !== ''"
-                :categories="ancestorsAndSelfCategories"/>
+                :categories="ancestorsAndSelfCategories" class="pt-4"/>
 
             <div class="flex items-center justify-between gap-5 mb-6 max-md:mb-8">
                 <div class="flex flex-wrap items-end gap-3 max-md:flex-col max-md:items-start max-md:gap-1.5">
