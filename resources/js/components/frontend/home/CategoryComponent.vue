@@ -214,10 +214,11 @@ export default {
     methods: {
         displayCategoryName(name) {
             if (name.length < 15) {
+                const dots = ".".repeat(15 - name.length);
                 return (
                     <span>
                         {name}
-                        <span class="text-white">................</span>
+                        <span class="text-white">{dots}</span>
                     </span>
                 );
             } else {
