@@ -272,7 +272,7 @@ export default {
             return this.$store.getters["frontendProduct/categoryWiseVariations"];
         },
         // TODO
-        isCategoryPage() {
+        isCategoryPage: function () {
             return window.location.href.startsWith("https://bunky.fun/#/product?category=");
         }
     },
