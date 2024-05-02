@@ -316,7 +316,7 @@
 
                     <div
                         v-else
-                        class="w-64 absolute top-15 -right-10 z-10 p-4 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100"
+                        class="w-64 absolute top-15 -right-10 z-30 p-4 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100"
                     >
                         <router-link
                             class="!text-primary !bg-[#FFF4F1] w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap"
