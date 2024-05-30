@@ -171,6 +171,7 @@
                         type="checkbox"
                         id="accountToggle"
                         class="peer hidden"
+                        ref="accountToggle"
                     />
                     <label
                         for="accountToggle"
@@ -218,6 +219,7 @@
                                 "
                                 class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
                                 :to="{ name: 'admin.dashboard' }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-dashboard"
@@ -234,6 +236,7 @@
                                 :to="{
                                     name: 'frontend.account.orderHistory',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-bag"
@@ -250,6 +253,7 @@
                                 :to="{
                                     name: 'frontend.account.returnOrders',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-refresh"
@@ -266,6 +270,7 @@
                                 :to="{
                                     name: 'frontend.account.accountInfo',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-user"
@@ -325,7 +330,7 @@
 
                     <div
                         v-else
-                        class="w-64 absolute top-15 -right-10 z-50 p-4 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100"
+                        class="peer-checked:block w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 peer-checked:scale-y-100"
                     >
                         <router-link
                             class="!text-primary !bg-[#FFF4F1] w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap"
@@ -822,6 +827,9 @@ export default {
                         .catch();
                 })
                 .catch();
+        },
+        closeDropdown() {
+            this.$refs.accountToggle.checked = false;
         },
         logout: function () {
             this.$store
