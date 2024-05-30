@@ -29,7 +29,7 @@
                     </router-link>
                 </div>
                 <div
-                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6"
                 >
                     <ProductListComponent
                         v-if="productSection.products.length > 0"
@@ -88,7 +88,7 @@
                     </router-link>
                 </div>
                 <div
-                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6"
                 >
                     <ProductListComponent
                         v-if="productSection.products.length > 0"
