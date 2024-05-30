@@ -189,7 +189,7 @@
                     <div
                         v-if="logged"
                         v-show="isDropdownOpen"
-                        class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
+                        class="w-64 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
                     >
                         <div
                             class="flex items-center gap-3 p-4 border-b border-[#EFF0F6]"
@@ -225,7 +225,6 @@
                                 "
                                 class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
                                 :to="{ name: 'admin.dashboard' }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-dashboard"
@@ -242,7 +241,6 @@
                                 :to="{
                                     name: 'frontend.account.orderHistory',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-bag"
@@ -259,7 +257,6 @@
                                 :to="{
                                     name: 'frontend.account.returnOrders',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-refresh"
@@ -276,7 +273,6 @@
                                 :to="{
                                     name: 'frontend.account.accountInfo',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-user"
@@ -337,26 +333,24 @@
                     <div
                         v-else
                         v-show="isDropdownOpen"
-                        class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
+                        class="w-64 absolute top-15 -right-10 z-50 p-4 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
                     >
-                        <router-link
-                            class="!text-primary !bg-[#FFF4F1] w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap"
-                            :to="{ name: 'auth.signup' }"
-                            @click.native="closeDropdown"
-                        >
-                            {{ $t("button.register_your_account") }}
-                        </router-link>
-                        <span
-                            class="block font-medium uppercase text-center py-3"
-                            >{{ $t("label.or") }}</span
-                        >
-                        <router-link
-                            class="w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap text-white bg-primary"
-                            :to="{ name: 'auth.login' }"
-                            @click.native="closeDropdown"
-                        >
-                            {{ $t("button.login_to_your_account") }}
-                        </router-link>
+                            <router-link
+                                class="!text-primary !bg-[#FFF4F1] w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap"
+                                :to="{ name: 'auth.signup' }"
+                            >
+                                {{ $t("button.register_your_account") }}
+                            </router-link>
+                            <span
+                                class="block font-medium uppercase text-center py-3"
+                                >{{ $t("label.or") }}</span
+                            >
+                            <router-link
+                                class="w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap text-white bg-primary"
+                                :to="{ name: 'auth.login' }"
+                            >
+                                {{ $t("button.login_to_your_account") }}
+                            </router-link>
                     </div>
                 </div>
                 <!-- My Account End -->
@@ -662,7 +656,7 @@ export default {
         },
     },
     mounted() {
-        document.addEventListener('click', this.handleClickOutside);
+        document.addEventListener("click", this.handleClickOutside);
         this.currentRoute = this.$route.path;
         this.loading.isActive = true;
         this.orderPermissionCheck();
@@ -918,7 +912,7 @@ export default {
         },
     },
     beforeDestroy() {
-        document.removeEventListener('click', this.handleClickOutside);
-    }
+        document.removeEventListener("click", this.handleClickOutside);
+    },
 };
 </script>
