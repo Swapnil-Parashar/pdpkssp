@@ -3,7 +3,7 @@
 
     <div class="col-12">
         <div id="productSection" class="db-tab-div active">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mb-5">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 mb-5">
                 <button @click.prevent="multiTargets($event, 'tab-action', 'tab-content', 'productSectionInformation')"
                     class="tab-action active w-full flex items-center gap-3 h-10 px-4 rounded-lg bg-white hover:text-primary hover:bg-primary/5">
                     <i class="lab lab-fill-info lab-font-size-16"></i>

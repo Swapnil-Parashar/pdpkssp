@@ -1,7 +1,7 @@
 <template>
   <LoadingComponent :props="loading" />
   <div class="md:w-[calc(100%-340px)] lg:w-[calc(100%-320px)] xl:w-[calc(100%-377px)]">
-    <form class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4" @submit.prevent="search">
+    <form class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4" @submit.prevent="search">
       <div class="col-span-2 lg:col-span-1 flex items-center h-10 px-3 rounded-md border border-[#EFF0F6] bg-white">
         <button type="submit" class="lab-line-search ltr:mr-2 rtl:ml-2"></button>
         <input type="search" v-model="props.search.name" :placeholder="$t('label.search_here')" class="w-full">
