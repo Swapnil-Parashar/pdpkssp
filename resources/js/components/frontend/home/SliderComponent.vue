@@ -26,7 +26,7 @@
                     </div>
                     <div v-else>
                         <img
-                            class="w-full min-md:h-64"
+                            class="w-full min-md:h-96"
                             :src="slider.image"
                             alt="banner"
                             loading="lazy"
