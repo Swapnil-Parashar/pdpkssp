@@ -167,20 +167,10 @@
 
                 <!-- My Account Start -->
                 <div class="relative hidden lg:block group">
-                    <!-- <button
+                    <button
                         type="button"
                         class="lab-line-user text-xl py-5"
-                    ></button> -->
-                    <router-link
-                        class="hidden lg:block relative"
-                        :to="{
-                            name: logged
-                                ? 'frontend.account.accountInfo'
-                                : 'auth.login',
-                        }"
-                    >
-                        <i class="lab-line-user text-xl"></i>
-                    </router-link>
+                    ></button>
                     <div
                         v-if="logged"
                         class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100"
@@ -369,7 +359,7 @@
 
             <!-- Category navbar -->
             <div class="fixed top-[64px] left-0 z-30 w-full origin-top">
-                <div>
+                <div >
                     <div
                         class="bg-secondary mobile:hidden tablet:hidden laptop:hidden"
                     >
