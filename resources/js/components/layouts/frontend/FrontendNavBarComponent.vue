@@ -171,7 +171,6 @@
                         type="checkbox"
                         id="accountToggle"
                         class="peer hidden"
-                        ref="accountToggle"
                     />
                     <label
                         for="accountToggle"
@@ -219,7 +218,6 @@
                                 "
                                 class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
                                 :to="{ name: 'admin.dashboard' }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-dashboard"
@@ -236,7 +234,6 @@
                                 :to="{
                                     name: 'frontend.account.orderHistory',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-bag"
@@ -253,7 +250,6 @@
                                 :to="{
                                     name: 'frontend.account.returnOrders',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-refresh"
@@ -270,7 +266,6 @@
                                 :to="{
                                     name: 'frontend.account.accountInfo',
                                 }"
-                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-user"
@@ -827,9 +822,6 @@ export default {
                         .catch();
                 })
                 .catch();
-        },
-        closeDropdown() {
-            this.$refs.accountToggle.checked = false;
         },
         logout: function () {
             this.$store
