@@ -167,13 +167,22 @@
 
                 <!-- My Account Start -->
                 <div class="relative hidden lg:block group">
-                    <button
+                    <input
+                        type="checkbox"
+                        id="accountToggle"
+                        class="peer hidden"
+                    />
+                    <label
+                        for="accountToggle"
+                        class="lab-line-user text-xl py-5 cursor-pointer"
+                    ></label>
+                    <!-- <button
                         type="button"
                         class="lab-line-user text-xl py-5"
-                    ></button>
+                    ></button> -->
                     <div
                         v-if="logged"
-                        class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100"
+                        class="peer-checked:block w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 peer-checked:scale-y-100"
                     >
                         <div
                             class="flex items-center gap-3 p-4 border-b border-[#EFF0F6]"
@@ -359,7 +368,7 @@
 
             <!-- Category navbar -->
             <div class="fixed top-[64px] left-0 z-30 w-full origin-top">
-                <div >
+                <div>
                     <div
                         class="bg-secondary mobile:hidden tablet:hidden laptop:hidden"
                     >
