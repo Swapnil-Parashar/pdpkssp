@@ -1,7 +1,7 @@
 <template>
     <LoadingComponent :props="loading" />
 
-    <section class="mb-1 mt-4 sm:mb-5" v-if="brands.length > 1">
+    <section class="mb-1 sm:mb-5" v-if="brands.length > 1">
         <div class="container">
             <h2 class="capitalize text-2xl sm:text-4xl font-bold -mb-10">
                 {{ $t("label.popular_brands") }}
@@ -15,7 +15,7 @@
                 class="navigate-swiper"
                 :breakpoints="breakpoints"
             >
-                <SwiperSlide v-for="brand in brands" class="mobile:!w-[120px]">
+                <SwiperSlide v-for="brand in brands" class="mobile:!w-[120px] mt-4">
                     <div class="w-full shadow-xs group border border-gray-100">
                         <figure
                             class="w-full h-[120px] flex items-center justify-center"
