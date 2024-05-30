@@ -17,7 +17,7 @@
                     <div v-if="slider.link">
                         <a :href="slider.link">
                             <img
-                                class="w-full"
+                                class="w-full h-48 sm:h-32"
                                 :src="slider.image"
                                 alt="banner0"
                                 loading="lazy"
@@ -26,7 +26,7 @@
                     </div>
                     <div v-else>
                         <img
-                            class="w-full min-md:h-96"
+                            class="w-full h-48 sm:h-32"
                             :src="slider.image"
                             alt="banner"
                             loading="lazy"
