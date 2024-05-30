@@ -36,7 +36,7 @@
                         >
                             {{ category.name }}
                             <span v-if="category.name.length < 15" class="text-white" id="conditional">
-                                ...............................
+                                ..................................
                             </span>
                         </span>
                     </router-link>
