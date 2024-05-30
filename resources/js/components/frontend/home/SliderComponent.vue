@@ -17,7 +17,7 @@
                     <div v-if="slider.link">
                         <a :href="slider.link">
                             <img
-                                class="w-full min-md:h-64"
+                                class="w-full"
                                 :src="slider.image"
                                 alt="banner0"
                                 loading="lazy"
