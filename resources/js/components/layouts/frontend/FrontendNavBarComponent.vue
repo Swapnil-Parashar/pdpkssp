@@ -166,14 +166,20 @@
                 <!-- WishList End -->
 
                 <!-- My Account Start -->
-                <div class="relative hidden lg:block group">
-                    <input
+                <div
+                    class="relative hidden lg:block group"
+                    @click.stop="toggleDropdown"
+                >
+                    <!-- <input
                         type="checkbox"
                         id="accountToggle"
                         class="peer hidden"
                     />
                     <label
                         for="accountToggle"
+                        class="lab-line-user text-xl py-5 cursor-pointer"
+                    ></label> -->
+                    <label
                         class="lab-line-user text-xl py-5 cursor-pointer"
                     ></label>
                     <!-- <button
@@ -182,7 +188,8 @@
                     ></button> -->
                     <div
                         v-if="logged"
-                        class="peer-checked:block w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 peer-checked:scale-y-100"
+                        v-show="isDropdownOpen"
+                        class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
                     >
                         <div
                             class="flex items-center gap-3 p-4 border-b border-[#EFF0F6]"
@@ -218,6 +225,7 @@
                                 "
                                 class="flex items-center gap-3 px-4 py-2 transition-all duration-500 hover:bg-gray-100"
                                 :to="{ name: 'admin.dashboard' }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-dashboard"
@@ -234,6 +242,7 @@
                                 :to="{
                                     name: 'frontend.account.orderHistory',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-bag"
@@ -250,6 +259,7 @@
                                 :to="{
                                     name: 'frontend.account.returnOrders',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-refresh"
@@ -266,6 +276,7 @@
                                 :to="{
                                     name: 'frontend.account.accountInfo',
                                 }"
+                                @click.native="closeDropdown"
                             >
                                 <i
                                     class="text-sm text-[#A0A3BD] lab-fill-user"
@@ -325,11 +336,13 @@
 
                     <div
                         v-else
-                        class="peer-checked:block w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top scale-y-0 peer-checked:scale-y-100"
+                        v-show="isDropdownOpen"
+                        class="w-60 absolute top-15 -right-10 z-50 rounded-2xl overflow-hidden shadow-card bg-white transition-all duration-300 origin-top"
                     >
                         <router-link
                             class="!text-primary !bg-[#FFF4F1] w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap"
                             :to="{ name: 'auth.signup' }"
+                            @click.native="closeDropdown"
                         >
                             {{ $t("button.register_your_account") }}
                         </router-link>
@@ -340,6 +353,7 @@
                         <router-link
                             class="w-full text-center h-12 leading-12 font-semibold tracking-wide rounded-full whitespace-nowrap text-white bg-primary"
                             :to="{ name: 'auth.login' }"
+                            @click.native="closeDropdown"
                         >
                             {{ $t("button.login_to_your_account") }}
                         </router-link>
@@ -590,6 +604,7 @@ export default {
     },
     data() {
         return {
+            isDropdownOpen: false,
             loading: {
                 isActive: false,
             },
@@ -647,6 +662,7 @@ export default {
         },
     },
     mounted() {
+        document.addEventListener('click', this.handleClickOutside);
         this.currentRoute = this.$route.path;
         this.loading.isActive = true;
         this.orderPermissionCheck();
@@ -831,6 +847,17 @@ export default {
                 })
                 .catch();
         },
+        toggleDropdown() {
+            this.isDropdownOpen = !this.isDropdownOpen;
+        },
+        closeDropdown() {
+            this.isDropdownOpen = false;
+        },
+        handleClickOutside(event) {
+            if (!this.$el.contains(event.target)) {
+                this.closeDropdown();
+            }
+        },
         search: function () {
             if (
                 typeof this.searchProduct !== "undefined" &&
@@ -890,5 +917,8 @@ export default {
             this.currentRoute = to.path;
         },
     },
+    beforeDestroy() {
+        document.removeEventListener('click', this.handleClickOutside);
+    }
 };
 </script>
