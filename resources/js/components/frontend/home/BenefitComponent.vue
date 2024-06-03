@@ -2,7 +2,7 @@
     <LoadingComponent :props="loading" />
     <section
         v-if="benefits.length > 0"
-        class="pt-1 pb-3 mobile:py-12 border-t border-slate-100 max-mid:pb-8"
+        class="pt-1 pb-3 mobile:py-12 border-t border-slate-100 max-md:pb-8"
     >
         <div class="container">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
