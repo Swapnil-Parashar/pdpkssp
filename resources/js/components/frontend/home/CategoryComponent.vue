@@ -24,7 +24,7 @@
                             query: { category: category.slug },
                         }"
                         class="w-full shadow-xs group flex flex-col justify-between"
-                        style="box-shadow: 0 1px 3px 1px rgbs(0,0,0,0.2); border-radius: 0.25rem;"
+                        style="box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2); border-radius: 0.25rem;"
                     >
                         <img
                             class="w-full block"
