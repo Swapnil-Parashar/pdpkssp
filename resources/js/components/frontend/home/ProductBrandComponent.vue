@@ -17,7 +17,7 @@
             >
                 <SwiperSlide
                     v-for="brand in brands"
-                    class="mobile:!w-[120px] mt-8"
+                    class="mobile:!w-[120px] mt-16"
                 >
                     <div
                         class="w-full shadow-xs group border border-gray-100 bg-white"
