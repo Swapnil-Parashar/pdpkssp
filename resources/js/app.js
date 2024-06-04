@@ -11,6 +11,7 @@ import VueNextSelect from 'vue-next-select';
 import 'vue-next-select/dist/index.css';
 import ENV from './config/env';
 import "../../public/themes/default/fonts/urbanist/urbanist.css";
+import "../../public/themes/default/fonts/noto/noto.css";
 import "../../public/themes/default/fonts/iconly/iconly.css";
 import "../../public/themes/default/fonts/public/public.css";
 import "../../public/themes/default/fonts/fontawesome/fontawesome.css";
