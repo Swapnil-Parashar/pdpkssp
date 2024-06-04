@@ -47,6 +47,7 @@ module.exports = {
                 "primary-light": "rgb(var(--primary-light) / <alpha-value>)",
                 "primary-slate": "rgb(var(--primary-slate) / <alpha-value>)",
                 secondary: "#374043",
+                tertiary: "#ece7e2",
                 "shopperz-red": "#FF6262",
                 "shopperz-gray": "#EFF0F6",
                 "shopperz-slate": "#D9DBE9",

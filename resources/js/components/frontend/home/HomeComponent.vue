@@ -13,9 +13,9 @@
 
     <MostPopularComponent />
 
-    <ProductBrandComponent />
-
     <BenefitComponent />
+
+    <ProductBrandComponent />
 </template>
 
 <script>

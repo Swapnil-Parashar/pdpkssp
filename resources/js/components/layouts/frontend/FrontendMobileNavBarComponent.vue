@@ -1,5 +1,5 @@
 <template>
-    <nav class="lg:hidden w-full flex items-center justify-between px-5 py-3 fixed bottom-0 left-0 z-10 shadow-widget bg-white">
+    <nav class="lg:hidden w-full flex items-center justify-between px-5 py-3 fixed bottom-0 left-0 z-10 shadow-widget bg-tertiary">
         <router-link class="flex flex-col items-center gap-1 text-text transition-all duration-300 hover:text-primary" :class="checkIsPathAndRoutePathSame('/home') ? 'router-link-active router-link-exact-active !text-primary' : ''" :to="{name : 'frontend.home'}">
             <i class="lab-line-home text-lg leading-none"></i>
             <span class="text-xs font-medium capitalize">{{ $t('label.home') }}</span>

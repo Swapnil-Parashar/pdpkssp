@@ -11,7 +11,7 @@
         --admin-font: 'Public Sans', sans-serif;
         --icon-font: 'Iconly';
     }
-    body { @apply font-client text-base font-normal scroll-smooth bg-white }
+    body { @apply font-client text-base font-normal scroll-smooth bg-tertiary }
 
     *::before,
     *::after { @apply inline-block }

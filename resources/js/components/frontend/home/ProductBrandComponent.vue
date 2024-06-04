@@ -15,8 +15,17 @@
                 class="navigate-swiper"
                 :breakpoints="breakpoints"
             >
-                <SwiperSlide v-for="brand in brands" class="mobile:!w-[120px] mt-8">
-                    <div class="w-full shadow-xs group border border-gray-100">
+                <SwiperSlide
+                    v-for="brand in brands"
+                    class="mobile:!w-[120px] mt-8"
+                >
+                    <div
+                        class="w-full shadow-xs group border border-gray-100 bg-white"
+                        style="
+                            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+                            border-radius: 0.25rem;
+                        "
+                    >
                         <figure
                             class="w-full h-[120px] flex items-center justify-center"
                         >

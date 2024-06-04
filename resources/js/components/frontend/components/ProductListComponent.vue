@@ -2,7 +2,7 @@
     <div
         v-if="products.length > 0"
         v-for="product in products"
-        class="sm:p-2 sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group"
+        class="sm:p-2 sm:shadow-card transition-all duration-300 sm:hover:shadow-hover group bg-white"
         style="
             box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0.25rem;
