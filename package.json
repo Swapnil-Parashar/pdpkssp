@@ -43,6 +43,7 @@
         "vue3-quill": "^0.3.0",
         "vue3-simple-alert": "^1.0.4",
         "vuex": "^4.1.0",
-        "vuex-persistedstate": "^4.1.0"
+        "vuex-persistedstate": "^4.1.0",
+        "webpack": "^5.92.0"
     }
 }
