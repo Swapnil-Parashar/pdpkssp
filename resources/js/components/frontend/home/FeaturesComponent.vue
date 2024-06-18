@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex flex-col lg:flex-row my-4 h-auto lg:h-64">
+  <div class="container flex flex-col lg:flex-row my-4 h-auto lg:h-96">
     <!-- Left Column -->
     <div class="w-full lg:w-1/3 bg-blue-100 p-2 lg:p-4 overflow-auto">
       <div 
@@ -8,7 +8,7 @@
         @click="selectBenefit(index)"
         class="flex items-center mb-2 p-2 cursor-pointer hover:bg-blue-200 rounded transition"
       >
-        <img :src="benefit.icon" alt="icon" class="w-8 h-8 mr-2 lg:mr-4" />
+        <img :src="benefit.icon" alt="icon" class="w-14 h-14 mr-2 lg:mr-4" />
         <div>
           <h3 class="font-semibold text-sm lg:text-base">{{ benefit.title }}</h3>
           <p class="text-xs lg:text-sm">{{ benefit.description }}</p>
@@ -18,7 +18,7 @@
     
     <!-- Right Column -->
     <div class="w-full lg:w-2/3 bg-white p-2 lg:p-4 flex items-center justify-center">
-      <img :src="selectedImage" alt="Map" class="w-full h-full object-contain max-h-64" />
+      <img :src="selectedImage" alt="Map" class="w-full h-full object-contain max-h-96" />
     </div>
   </div>
 </template>
