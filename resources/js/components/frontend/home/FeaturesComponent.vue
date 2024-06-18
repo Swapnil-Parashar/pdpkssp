@@ -1,7 +1,7 @@
 <template>
-  <div class="container flex flex-col lg:flex-row my-4 h-auto lg:h-32rem">
+  <div class="container flex flex-col lg:flex-row my-4 h-auto lg:h-64">
     <!-- Left Column -->
-    <div class="w-full lg:w-1/3 bg-blue-100 p-2 lg:p-4">
+    <div class="w-full lg:w-1/3 bg-blue-100 p-2 lg:p-4 overflow-auto">
       <div 
         v-for="(benefit, index) in benefits" 
         :key="index" 
@@ -18,7 +18,7 @@
     
     <!-- Right Column -->
     <div class="w-full lg:w-2/3 bg-white p-2 lg:p-4 flex items-center justify-center">
-      <img :src="selectedImage" alt="Map" class="w-full h-48 lg:h-auto object-contain" />
+      <img :src="selectedImage" alt="Map" class="w-full h-full object-contain max-h-64" />
     </div>
   </div>
 </template>
