@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen">
+  <div class="container flex">
     <!-- Left Column -->
     <div class="w-1/3 bg-blue-100 p-4">
-      <h2 class="text-2xl font-bold mb-4">Being a Pro Has Its Perks!</h2>
+      <!-- <h2 class="text-2xl font-bold mb-4">Being a Pro Has Its Perks!</h2> -->
       <div 
         v-for="(benefit, index) in benefits" 
         :key="index" 
@@ -31,7 +31,7 @@ export default {
       benefits: [
         {
           title: "Free Shipping",
-          description: "Your shipping costs are always on the house",
+          description: "Your shipping costs are always on us.",
           icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
           image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
         },
@@ -55,7 +55,7 @@ export default {
         },
         {
           title: "Dedicated Phone Line",
-          description: "Receive fast and friendly support exclusively for pros",
+          description: "Receive fast and friendly support.",
           icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
           image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
         },
