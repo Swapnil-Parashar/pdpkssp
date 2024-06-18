@@ -69,6 +69,12 @@ class SettingResource extends JsonResource
             'image_confirm'                         => asset('/images/required/confirm.gif'),
             'image_403'                             => asset('/images/required/403.png'),
             'image_404'                             => asset('/images/required/404.png'),
+            'rewards_gif'                           => asset('/images/required/features/rewards.gif'),
+            'dedicated_support'                     => asset('/images/required/features/dedicated_support.gif'),
+            'easy_return'                           => asset('/images/required/features/easy_return.gif'),
+            'delivery'                              => asset('/images/required/features/delivery.gif'),
+            'lowest'                                => asset('/images/required/features/lowest.gif'),
+        
         ];
     }
 

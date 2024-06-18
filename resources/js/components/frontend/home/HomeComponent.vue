@@ -5,14 +5,16 @@
 
     <CategoryComponent />
 
-    <MostPopularComponent />
-
     <!-- <FlashSaleComponent /> -->
 
     <PromotionComponent />
 
     <ProductSectionComponent />
 
+    <MostPopularComponent />
+
+    <FeaturesComponent />
+    
     <BenefitComponent />
 
     <ProductBrandComponent />
@@ -28,12 +30,15 @@ import FlashSaleComponent from "./FlashSaleComponent.vue";
 import ProductBrandComponent from "./ProductBrandComponent.vue";
 import MostPopularComponent from "./MostPopularComponent.vue";
 import TopCategoryComponent from "./TopCategoryComponent.vue";
+import FeaturesComponent from "./FeaturesComponent.vue";
+
 export default {
     name: "HomeComponent",
     components: {
         TopCategoryComponent,
         MostPopularComponent,
         FlashSaleComponent,
+        FeaturesComponent,
         BenefitComponent,
         SliderComponent,
         CategoryComponent,
