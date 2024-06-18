@@ -5,13 +5,13 @@
 
     <CategoryComponent />
 
+    <MostPopularComponent />
+
     <!-- <FlashSaleComponent /> -->
 
     <PromotionComponent />
 
     <ProductSectionComponent />
-
-    <MostPopularComponent />
 
     <BenefitComponent />
 
