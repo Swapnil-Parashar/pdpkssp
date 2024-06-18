@@ -3,11 +3,11 @@
 
     <CategoryComponent />
 
+    <MostPopularComponent />
+
     <PromotionComponent />
 
     <ProductSectionComponent />
-
-    <MostPopularComponent />
 
     <FlashSaleComponent />
 
