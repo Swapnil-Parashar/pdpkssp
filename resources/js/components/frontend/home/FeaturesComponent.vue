@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex flex-col lg:flex-row my-4">
+  <div class="container flex flex-col lg:flex-row my-4 h-auto lg:h-32rem">
     <!-- Left Column -->
     <div class="w-full lg:w-1/3 bg-blue-100 p-2 lg:p-4">
       <div 
