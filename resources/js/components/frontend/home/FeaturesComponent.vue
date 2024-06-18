@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex">
+  <div class="container flex m-4">
     <!-- Left Column -->
     <div class="w-1/3 bg-blue-100 p-4">
       <!-- <h2 class="text-2xl font-bold mb-4">Being a Pro Has Its Perks!</h2> -->
@@ -32,35 +32,30 @@ export default {
         {
           title: "Free Shipping",
           description: "Your shipping costs are always on us.",
-          icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
-          image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
+          icon: "https://bunky.fun/images/assets/features/delivery.gif",
+          image: "https://bunky.fun/images/assets/features/delivery.png",
         },
         {
           title: "Lower Prices",
           description: "Competitive advantage with discounts on every order",
-          icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
-          image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
-        },
-        {
-          title: "Free Returns",
-          description: "We cover all return costs and fees",
-          icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
-          image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
-        },
-        {
-          title: "Exclusive Gear",
-          description: "Get free TradeMaster merchandise with select orders",
-          icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
-          image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
+          icon: "https://bunky.fun/images/assets/features/lowest.gif",
+          image: "https://bunky.fun/images/assets/features/lowest.png",
         },
         {
           title: "Dedicated Phone Line",
           description: "Receive fast and friendly support.",
-          icon: "https://cdn.pixabay.com/animation/2022/10/11/09/05/09-05-26-529_512.gif",
-          image: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
+          icon: "https://bunky.fun/images/assets/features/support.gif",
+          image: "https://bunky.fun/images/assets/features/support.png",
         },
+        {
+          title: "Free Returns",
+          description: "We cover all return costs and fees",
+          icon: "https://bunky.fun/images/assets/features/return.gif",
+          image: "https://bunky.fun/images/assets/features/return.png",
+        },
+        
       ],
-      selectedImage: "https://cdn.britannica.com/31/160431-050-C38A5086/Image-Earth-Russian-Elektro-L-weather-satellite-2012.jpg",
+      selectedImage: "https://bunky.fun/images/assets/features/delivery.png",
     };
   },
   methods: {
