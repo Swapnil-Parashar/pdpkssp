@@ -15,7 +15,7 @@
 
     <FeaturesComponent />
     
-    <BenefitComponent />
+    <!-- <BenefitComponent /> -->
 
     <ProductBrandComponent />
 </template>

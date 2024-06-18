@@ -1,25 +1,24 @@
 <template>
-  <div class="container flex m-4">
+  <div class="container flex flex-col lg:flex-row my-4">
     <!-- Left Column -->
-    <div class="w-1/3 bg-blue-100 p-4">
-      <!-- <h2 class="text-2xl font-bold mb-4">Being a Pro Has Its Perks!</h2> -->
+    <div class="w-full lg:w-1/3 bg-blue-100 p-2 lg:p-4">
       <div 
         v-for="(benefit, index) in benefits" 
         :key="index" 
         @click="selectBenefit(index)"
-        class="flex items-center mb-4 p-2 cursor-pointer hover:bg-blue-200 rounded transition"
+        class="flex items-center mb-2 p-2 cursor-pointer hover:bg-blue-200 rounded transition"
       >
-        <img :src="benefit.icon" alt="icon" class="w-8 h-8 mr-4" />
+        <img :src="benefit.icon" alt="icon" class="w-8 h-8 mr-2 lg:mr-4" />
         <div>
-          <h3 class="font-semibold">{{ benefit.title }}</h3>
-          <p>{{ benefit.description }}</p>
+          <h3 class="font-semibold text-sm lg:text-base">{{ benefit.title }}</h3>
+          <p class="text-xs lg:text-sm">{{ benefit.description }}</p>
         </div>
       </div>
     </div>
     
     <!-- Right Column -->
-    <div class="w-2/3 bg-white p-4 flex items-center justify-center">
-      <img :src="selectedImage" alt="Map" class="w-full h-full object-contain" />
+    <div class="w-full lg:w-2/3 bg-white p-2 lg:p-4 flex items-center justify-center">
+      <img :src="selectedImage" alt="Map" class="w-full h-48 lg:h-auto object-contain" />
     </div>
   </div>
 </template>
@@ -53,7 +52,6 @@ export default {
           icon: "https://bunky.fun/images/assets/features/return.gif",
           image: "https://bunky.fun/images/assets/features/return.png",
         },
-        
       ],
       selectedImage: "https://bunky.fun/images/assets/features/delivery.png",
     };
