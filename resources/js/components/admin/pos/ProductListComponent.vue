@@ -36,14 +36,14 @@
                 </div>
 
                 <div class="flex flex-wrap-reverse items-center gap-x-3 gap-y-1" v-if="product.is_offer">
-                    <h3 class="text-md sm:text-[22px]">
+                    <h3 class="text-lg sm:text-[18px] font-semibold">
                         <span>{{ product.discounted_price }}</span>
                     </h3>
-                    <h4 class="text-sm sm:text-base text-shopperz-red">
+                    <h4 class="text-sm sm:text-base font-semibold text-shopperz-red">
                         <del>{{ product.currency_price }}</del>
                     </h4>
                 </div>
-                <h4 class="text-xl sm:text-[22px]" v-else>
+                <h4 class="text-lg sm:text-[18px] font-semibold" v-else>
                     <span>{{ product.currency_price }}</span>
                 </h4>
             </div>
