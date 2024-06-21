@@ -33,8 +33,10 @@
                                 :src="brand.cover"
                                 alt="brand"
                                 loading="lazy"
-                                class="w-14"
+                                class="w-32"
+                                
                             />
+                          
                         </figure>
                         <span
                             class="text-sm sm:text-lg font-medium capitalize text-center pb-3 block group-hover:text-primary"

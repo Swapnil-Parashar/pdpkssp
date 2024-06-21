@@ -142,7 +142,7 @@
                     ></div>
                     <div class="call-block__wording">
                         <div class="title text-sm font-bold text-secondary">
-                            Call 6205467465
+                            Call 011631966189
                         </div>
                         <div class="text-xs -mt-1">to talk to an expert</div>
                     </div>

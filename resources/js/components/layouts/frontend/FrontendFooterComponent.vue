@@ -224,26 +224,6 @@
                     alt="American Express"
                     class="h-6"
                 />
-                <img
-                    src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-paypal.svg"
-                    alt="PayPal"
-                    class="h-6"
-                />
-                <img
-                    src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-paypal-credit.svg"
-                    alt="PayPal Credit"
-                    class="h-6"
-                />
-                <img
-                    src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-sage.svg"
-                    alt="Sage"
-                    class="h-6"
-                />
-                <img
-                    src="https://files.ekmcdn.com/757e95/resources/design/payment-logo-white-apple-pay.svg"
-                    alt="Apple Pay"
-                    class="h-6"
-                />
             </div>
         </div>
         <div
