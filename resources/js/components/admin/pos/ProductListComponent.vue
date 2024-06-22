@@ -36,16 +36,16 @@
                 </div>
 
                 <div class="flex flex-wrap-reverse items-center gap-x-3 gap-y-1" v-if="product.is_offer">
-                    <h3 class="text-lg sm:text-[18px] font-semibold">
+                    <h3 class="capitalize text-base font-semibold whitespace-nowrap mb-1.5 transition-all duration-300 hover:text-primary overflow-hidden">
                         <span>{{ product.discounted_price }}</span>
                     </h3>
                     <h4 class="text-sm sm:text-base font-semibold text-shopperz-red">
                         <del>{{ product.currency_price }}</del>
                     </h4>
                 </div>
-                <h4 class="text-lg sm:text-[18px] font-semibold" v-else>
+                <h3 class="capitalize text-base font-semibold whitespace-nowrap mb-1.5 transition-all duration-300 hover:text-primary overflow-hidden" v-else>
                     <span>{{ product.currency_price }}</span>
-                </h4>
+                </h3>
             </div>
         </div>
     </div>
@@ -64,7 +64,6 @@
 </template>
 
 <script>
-
 import starRating from "vue-star-rating";
 import ProductDetailsComponent from "./ProductDetailsComponent";
 import targetService from "../../../services/targetService";
