@@ -30,7 +30,7 @@ export default {
       benefits: [
         {
           title: "Free Shipping",
-          description: "Your shipping costs are always on us.",
+          description: "Get Free shipping on order above €500",
           icon: "https://bunky.fun/images/assets/features/delivery.gif",
           image: "https://bunky.fun/images/assets/features/delivery.png",
         },
@@ -47,8 +47,8 @@ export default {
           image: "https://bunky.fun/images/assets/features/support.png",
         },
         {
-          title: "Free Returns",
-          description: "We cover all return costs and fees",
+          title: "Easy Returns",
+          description: "Get Easy returns and replacement",
           icon: "https://bunky.fun/images/assets/features/return.gif",
           image: "https://bunky.fun/images/assets/features/return.png",
         },
