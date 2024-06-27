@@ -21,7 +21,7 @@
 
 <script>
 import TemplateManagerComponent from "../components/TemplateManagerComponent.vue";
-import AboutUsComponent from "AboutUsComponent.vue";
+import AboutUsComponent from "./AboutUsComponent.vue";
 
 export default {
     name: "PageComponent",
