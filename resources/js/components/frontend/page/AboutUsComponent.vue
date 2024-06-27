@@ -37,7 +37,7 @@
           </div>
           <div class="image-container">
             <img
-              src="@/assets/images/our-mission.png"
+              src=""
               alt="Our Mission"
             />
           </div>
@@ -47,7 +47,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div class="image-container md:order-first">
             <img
-              src="@/assets/images/expert-solutions.png"
+              src=""
               alt="Expert Solutions"
             />
           </div>
@@ -78,7 +78,7 @@
           </div>
           <div class="image-container">
             <img
-              src="@/assets/images/quality-products.png"
+              src=""
               alt="Quality Products"
             />
           </div>
@@ -88,7 +88,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div class="image-container md:order-first">
             <img
-              src="@/assets/images/innovative-solutions.png"
+              src=""
               alt="Innovative Solutions"
             />
           </div>
@@ -158,7 +158,7 @@
   }
   
   .hero-section {
-    background-image: url("@/assets/images/hero.png");
+    background-image: url("");
     background-size: cover;
     background-position: center;
     height: 50vh;
