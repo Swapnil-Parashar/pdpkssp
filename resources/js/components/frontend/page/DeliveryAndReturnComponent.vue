@@ -16,35 +16,36 @@
                 <div class="content">
                     <h2 class="section-heading">Delivery, Returns & Warranty Information</h2>
                     <p class="text-paragraph text-lg mb-6">
-                        Carriage will be chargeable on:
-                        <ul class="list-disc pl-5">
+                        <h3 class="sub-section-heading">Carriage will be chargeable on:</h3>
+                        <ul class="list-disc pl-5 mb-4">
                             <li>All orders over the values of £300.00 (excluding VAT)</li>
                             <li>Any order of any size on timed delivery (i.e., pre 9am, pre Noon, etc.)</li>
                             <li>Any orders of any size for Saturday delivery</li>
                         </ul>
-                        Carriage charges are as follows:
-                        <ul class="list-disc pl-5">
+                        <h3 class="sub-section-heading">Carriage charges are as follows:</h3>
+                        <ul class="list-disc pl-5 mb-4">
                             <li>Standard Next Day Service - £15.00+VAT</li>
                             <li>Priority Service (Pre-10.30am) - £25.00+VAT</li>
                             <li>Saturday Service - £35.00+VAT</li>
                         </ul>
-                        Product Warranties
-                        <br />
-                        If circumstances arise where an item is believed to be faulty and is within the warranty period offered by Plumb
-                        Distribution Limited (detailed below), Plumb Distribution Limited will arrange for the item to be tested and a
-                        replacement and/or credit if necessary.
-                        <br /><br />
-                        Returns
-                        <br />
-                        Please note that unless agreed otherwise, any items returned will be subject to a restocking fee of 30% and
-                        return carriage costs are the responsibility of the buyer.
-                        Any goods returned as surplus to requirements must meet the following before a credit can be raised:
+                        <h3 class="sub-section-heading">Product Warranties</h3>
+                        <p class="text-paragraph mb-4">
+                            If circumstances arise where an item is believed to be faulty and is within the warranty period offered by Plumb
+                            Distribution Limited (detailed below), Plumb Distribution Limited will arrange for the item to be tested and a
+                            replacement and/or credit if necessary.
+                        </p>
+                        <h3 class="sub-section-heading">Returns</h3>
+                        <p class="text-paragraph mb-4">
+                            Please note that unless agreed otherwise, any items returned will be subject to a restocking fee of 30% and
+                            return carriage costs are the responsibility of the buyer.
+                            Any goods returned as surplus to requirements must meet the following before a credit can be raised:
+                        </p>
                         <ul class="list-disc pl-5">
                             <li>Item(s) must have been purchased within the last 6 months from Plumb Distribution Limited</li>
                             <li>Items must be returned in their original condition and packaging</li>
                             <li>When required, proof of purchase must be produced</li>
                             <li>Surplus Heatmiser products must have been purchased within the last 12 months otherwise these
-                            cannot be returned due to the manufacturer's warranty expiry</li>
+                                cannot be returned due to the manufacturer's warranty expiry</li>
                         </ul>
                     </p>
                 </div>
@@ -69,7 +70,6 @@ export default {
 }
 
 .hero-section {
-    /* background-image: url("https://bunky.fun/images/assets/deliveryandreturn/hero.png"); */
     background-image: url("https://bunky.fun/images/assets/aboutus/hero.png");
     background-size: cover;
     background-position: center;
@@ -98,37 +98,34 @@ export default {
 }
 
 .section-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #00446a;
+}
+
+.sub-section-heading {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.text-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    max-width: 100%;
-}
-
-.image-container img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-
-.stats-main {
-    background-color: #dbeafe;
-}
-
-.deliveryandreturn-main {
-    background-color: #f2f7f9;
-}
-
-.statistic {
-    text-align: center;
+li {
+    margin-bottom: 0.5rem;
 }
 
 .hero-deliveryandreturn-header {
@@ -138,15 +135,8 @@ export default {
     font-weight: bold;
 }
 
-.statistic-number {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #00446a;
-    margin-bottom: 0.5rem;
-}
-
-.statistic-description {
-    font-size: 1rem;
+.deliveryandreturn-main {
+    background-color: #f2f7f9;
 }
 
 @media (max-width: 768px) {
