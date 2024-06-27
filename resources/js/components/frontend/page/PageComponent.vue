@@ -4,6 +4,15 @@
             <div v-if="page.title === 'About Us'">
                 <AboutUsComponent />
             </div>
+            <div v-if="page.title === 'Delivery And Return Policy'">
+                <DeliveryAndReturnComponent />
+            </div>
+            <!-- <div v-if="page.title === 'Terms And Conditions'">
+                <AboutUsComponent />
+            </div>
+            <div v-if="page.title === 'Privacy Policy'">
+                <AboutUsComponent />
+            </div> -->
             <div v-else class="container">
                 <div class="mb-6">
                     <h2
@@ -27,6 +36,7 @@
 <script>
 import TemplateManagerComponent from "../components/TemplateManagerComponent.vue";
 import AboutUsComponent from "./AboutUsComponent.vue";
+import DeliveryAndReturnComponent from "./DeliveryAndReturnComponent.vue";
 
 export default {
     name: "PageComponent",
