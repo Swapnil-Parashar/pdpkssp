@@ -43,6 +43,7 @@ export default {
     components: {
         TemplateManagerComponent,
         AboutUsComponent,
+        DeliveryAndReturnComponent,
     },
     computed: {
         page() {

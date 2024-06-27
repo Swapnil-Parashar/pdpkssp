@@ -161,8 +161,7 @@ export default {
   background-image: url("https://bunky.fun/images/assets/aboutus/hero.png");
   background-size: cover;
   background-position: center;
-  /* height: 50vh; */
-  width: 100vw;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
