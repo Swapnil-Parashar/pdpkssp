@@ -3,18 +3,12 @@
         <div class="hero-section"></div>
         <div class="delivery-and-return">
             <p class="text-lg hero-deliveryandreturn-header pt-8 pb-8">
-                Welcome to Plumb Distribution, your go-to source for top-notch
-                underfloor heating systems and plumbing fittings. We take great
-                pride in providing solutions that are not only technically
-                advanced but also user-friendly, ensuring that you can enjoy the
-                unparalleled comfort and convenience of underfloor heating in
-                both residential and commercial settings.
+                Delivery, Returns & Warranty Information
             </p>
         </div>
-        <div class="mx-auto p-6 space-y-8 deliveryandreturn-main">
+        <div class="mx-auto p-6 space-y-8 deliveryandreturn-main pb-20">
             <div class="grid grid-cols-1 gap-8 items-center">
                 <div class="content">
-                    <h2 class="section-heading">Delivery, Returns & Warranty Information</h2>
                     <p class="text-paragraph text-lg mb-6">
                         <h3 class="sub-section-heading">Carriage will be chargeable on:</h3>
                         <ul class="list-disc pl-5 mb-4">
@@ -70,7 +64,7 @@ export default {
 }
 
 .hero-section {
-    background-image: url("https://bunky.fun/images/assets/aboutus/hero.png");
+    background-image: url("https://bunky.fun/images/assets/aboutus/delivery-and-return.png");
     background-size: cover;
     background-position: center;
     height: 50vh;
