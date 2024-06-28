@@ -35,22 +35,6 @@
             underfloor heating in your home or business.
           </p>
         </div>
-        <div class="image-container">
-          <img
-            src="https://bunky.fun/images/assets/aboutus/our-mission.png"
-            alt="Our Mission"
-          />
-        </div>
-      </div>
-
-      <!-- Second Section -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="image-container md:order-first">
-          <img
-            src="https://bunky.fun/images/assets/aboutus/expert-solutions.png"
-            alt="Expert Solutions"
-          />
-        </div>
         <div class="content">
           <h2 class="section-heading">Expert Solutions</h2>
           <p class="text-paragraph text-lg mb-6">
@@ -63,7 +47,7 @@
         </div>
       </div>
 
-      <!-- Third Section -->
+      <!-- Second Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="content">
           <h2 class="section-heading">Quality Assurance</h2>
@@ -84,7 +68,7 @@
         </div>
       </div>
 
-      <!-- Fourth Section -->
+      <!-- Third Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="image-container md:order-first">
           <img
