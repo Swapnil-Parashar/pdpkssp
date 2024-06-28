@@ -4,30 +4,32 @@
             <div v-if="page.title === 'About Us'">
                 <AboutUsComponent />
             </div>
-            <div v-if="page.title === 'Delivery And Return Policy'">
-                <DeliveryAndReturnComponent />
-            </div>
-            <div v-if="page.title === 'Terms And Conditions'">
-                <TermsAndConditionsComponent />
-            </div>
-            <div v-if="page.title === 'Privacy Policy'">
-                <PrivacyPolicyComponent />
-            </div>
-            <div v-else class="container">
-                <div class="mb-6">
-                    <h2
-                        class="text-[26px] leading-10 font-semibold capitalize mb-2"
-                    >
-                        {{ page.title }}
-                    </h2>
-                    <div v-if="page.image" class="w-full mb-6">
-                        <img :src="page.image" alt="image" loading="lazy" />
-                    </div>
-                    <div v-html="page.description"></div>
+            <div v-else>
+                <div v-if="page.title === 'Delivery And Return Policy'">
+                    <DeliveryAndReturnComponent />
                 </div>
-                <TemplateManagerComponent
-                    :menuTemplateId="page.menu_template_id"
-                />
+                <div v-else>
+                    <div v-if="page.title === 'Terms And Conditions'">
+                        <TermsAndConditionsComponent />
+                    </div>
+                    <div v-else>
+                        <div v-if="page.title === 'Privacy Policy'">
+                            <PrivacyPolicyComponent />
+                        </div>
+                        <div v-else class="container">
+                            <div class="mb-6">
+                                <h2 class="text-[26px] leading-10 font-semibold capitalize mb-2">
+                                    {{ page.title }}
+                                </h2>
+                                <div v-if="page.image" class="w-full mb-6">
+                                    <img :src="page.image" alt="image" loading="lazy" />
+                                </div>
+                                <div v-html="page.description"></div>
+                            </div>
+                            <TemplateManagerComponent :menuTemplateId="page.menu_template_id" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -54,9 +56,6 @@ export default {
             return this.$store.getters["frontendPage/show"];
         },
     },
-    mounted() {
-        this.pageSetup();
-    },
     methods: {
         pageSetup() {
             if (
@@ -69,6 +68,9 @@ export default {
                     .catch();
             }
         },
+    },
+    mounted() {
+        this.pageSetup();
     },
     watch: {
         $route() {
