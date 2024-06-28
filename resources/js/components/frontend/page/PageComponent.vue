@@ -38,6 +38,7 @@ import TemplateManagerComponent from "../components/TemplateManagerComponent.vue
 import AboutUsComponent from "./AboutUsComponent.vue";
 import DeliveryAndReturnComponent from "./DeliveryAndReturnComponent.vue";
 import TermsAndConditionsComponent from "./TermsAndConditionsComponent.vue";
+import PrivacyPolicyComponent from "./PrivacyPolicyComponent.vue";
 
 export default {
     name: "PageComponent",
