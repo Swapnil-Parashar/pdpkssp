@@ -1,6 +1,11 @@
 <template>
     <div>
-        <div class="hero-section"></div>
+        <div class="hero-section">
+            <img
+                src="https://bunky.fun/images/assets/aboutus/terms-and-conditions.png"
+                alt="Expert Solutions"
+            />
+        </div>
         <div class="terms-and-conditions">
             <p class="text-lg hero-termsandconditions-header pt-8 pb-8">
                 Terms and Conditions
@@ -107,14 +112,16 @@ export default {
 @tailwind utilities;
 
 .hero-section {
-  background-image: url("https://bunky.fun/images/assets/aboutus/terms-and-conditions.png");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  /* background-image: url("https://bunky.fun/images/assets/aboutus/terms-and-conditions.png"); */
+  background-size: cover; /* Use contain for exact fit */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .hero-heading {

@@ -1,6 +1,11 @@
 <template>
     <div>
-        <div class="hero-section"></div>
+        <div class="hero-section">
+            <img
+                src="https://bunky.fun/images/assets/aboutus/delivery-and-return.png"
+                alt="Expert Solutions"
+            />
+        </div>
         <div class="delivery-and-return">
             <p class="text-lg hero-deliveryandreturn-header pt-8 pb-8">
                 Delivery, Returns & Warranty Information
@@ -64,10 +69,12 @@ export default {
 }
 
 .hero-section {
-    background-image: url("https://bunky.fun/images/assets/aboutus/delivery-and-return.png");
-    background-size: cover;
+    /* background-image: url("https://bunky.fun/images/assets/aboutus/delivery-and-return.png"); */
+    background-size: cover; /* Use contain for exact fit */
     background-position: center;
-    height: 50vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh;  */
     display: flex;
     align-items: center;
     justify-content: center;

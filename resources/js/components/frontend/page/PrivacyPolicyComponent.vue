@@ -1,6 +1,11 @@
 <template>
   <div>
-      <div class="hero-section"></div>
+      <div class="hero-section">
+        <img
+                src="https://bunky.fun/images/assets/aboutus/privacy-policy.png"
+                alt="Expert Solutions"
+            />
+      </div>
       <div class="privacy-policy">
           <p class="hero-deliveryandreturn-header pt-8 pb-8 text-center">
               Privacy Policy
@@ -98,14 +103,16 @@ export default {
 }
 
 .hero-section {
-  background-image: url("https://bunky.fun/images/assets/aboutus/privacy-policy.png");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  /* background-image: url("https://bunky.fun/images/assets/aboutus/privacy-policy.png"); */
+  background-size: cover; /* Use contain for exact fit */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .hero-deliveryandreturn-header {
