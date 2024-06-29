@@ -6,9 +6,7 @@
                 alt="Expert Solutions"
             />
         </div>
-        <div class="delivery-and-return">
-           
-        </div>
+       
         <div class="mx-auto p-6 space-y-8 deliveryandreturn-main pb-20">
             <div class="grid grid-cols-1 gap-8 items-center">
                 <div class="content">

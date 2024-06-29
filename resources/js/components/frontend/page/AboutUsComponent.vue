@@ -202,8 +202,19 @@ export default {
     justify-content: center;
     position: relative;
 }
-.bottom-image-section{
-  height: 20vh; 
+.bottom-image-section {
+  display: none; /* Hide by default */
+}
+
+/* Small screens: Display the section */
+@media (max-width: 768px) {
+  .bottom-image-section {
+    display: block; /* Show on small screens */
+    height: 20vh;
+    /* background-image: url("@/assets/images/your-image.png");  */
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .hero-heading {
