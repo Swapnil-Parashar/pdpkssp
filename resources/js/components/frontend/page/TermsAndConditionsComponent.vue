@@ -7,9 +7,7 @@
             />
         </div>
         <div class="terms-and-conditions">
-            <p class="text-lg hero-termsandconditions-header pt-8 pb-8">
-                Terms and Conditions
-            </p>
+           
         </div>
         <div class="mx-auto p-6 space-y-8 termsandconditions-main pb-20">
             <div class="grid grid-cols-1 gap-8 items-center">

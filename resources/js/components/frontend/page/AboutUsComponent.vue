@@ -114,11 +114,14 @@
             </div>
         </div>
         <div class="hero-section">
-      <img
-            src="https://bunky.fun/images/assets/aboutus/ab.png"
-            alt="Expert Solutions"
-          />
-    </div>
+            <img
+                src="https://bunky.fun/images/assets/aboutus/ab.png"
+                alt="Expert Solutions"
+            />
+        </div>
+        <div class="bottom-image-section">
+
+        </div>
     </div>
 </template>
 
@@ -198,6 +201,9 @@ export default {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.bottom-image-section{
+  height: 20vh; 
 }
 
 .hero-heading {

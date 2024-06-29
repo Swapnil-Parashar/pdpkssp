@@ -7,9 +7,7 @@
             />
         </div>
         <div class="delivery-and-return">
-            <p class="text-lg hero-deliveryandreturn-header pt-8 pb-8">
-                Delivery, Returns & Warranty Information
-            </p>
+           
         </div>
         <div class="mx-auto p-6 space-y-8 deliveryandreturn-main pb-20">
             <div class="grid grid-cols-1 gap-8 items-center">
