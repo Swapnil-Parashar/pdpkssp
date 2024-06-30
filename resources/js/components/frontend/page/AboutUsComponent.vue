@@ -97,7 +97,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="image-container md:order-first">
                     <img
-                        src="https://bunky.fun/images/assets/aboutus/innovative-solutions.png"
+                        src="https://bunky.fun/images/assets/aboutus/ab.png"
                         alt="Innovative Solutions"
                     />
                 </div>
@@ -112,15 +112,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="hero-section">
-            <img
-                src="https://bunky.fun/images/assets/aboutus/ab.png"
-                alt="Expert Solutions"
-            />
-        </div>
-        <div class="bottom-image-section">
-
         </div>
     </div>
 </template>
