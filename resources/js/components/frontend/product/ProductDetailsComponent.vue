@@ -46,7 +46,7 @@
                         </del>
                     </h3>
 
-                    <div class="flex flex-wrap items-center gap-2 border-b border-gray-100 mb-6 pb-6">
+                    <!-- <div class="flex flex-wrap items-center gap-2 border-b border-gray-100 mb-6 pb-6">
                         <starRating border-color="#FFBC1F" :rounded-corners="true" :padding="2.5" :border-width="2.5"
                                     :star-size="11" class="-mt-0.5" inactive-color="#FFFFFF" active-color="#FFBC1F"
                                     :round-start-rating="false" :show-rating="false" :read-only="true" :max-rating="5"
@@ -62,7 +62,7 @@
                                 }} {{ product.rating_star_count > 1 ? $t('label.reviews') : $t('label.review') }})
                             </span>
                         </div>
-                    </div>
+                    </div> -->
 
                     <VariationComponent v-if="initialVariations.length > 0 && variationComponent"
                                         :method="selectedVariationMethod"
@@ -162,7 +162,7 @@
                             <div class="text-description" v-html="product.details"></div>
                         </div>
 
-                        <div id="tab_videos" class="tab-div p-4 sm:p-8 sm:pt-6 border-t border-[#D9DBE9]">
+                        <!-- <div id="tab_videos" class="tab-div p-4 sm:p-8 sm:pt-6 border-t border-[#D9DBE9]">
                             <h3 class="capitalize text-2xl sm:text-3xl font-bold mb-4">
                                 {{ $t('label.product_videos') }}
                             </h3>
@@ -230,7 +230,7 @@
                                 <span class="text-lg font-medium capitalize">{{ $t('label.read_more') }}</span>
                                 <i class="lab-line-down-arrow text-sm -mt-1"></i>
                             </button>
-                        </div>
+                        </div> -->
 
                         <div id="tab_shipping_and_return" class="tab-div p-4 sm:p-8 sm:pt-6 border-t border-[#D9DBE9]">
                             <h3 class="capitalize text-2xl sm:text-3xl font-bold mb-4">
