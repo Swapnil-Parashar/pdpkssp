@@ -59,7 +59,7 @@
                 </router-link>
             </h3>
 
-            <div class="flex flex-wrap items-center gap-2 mb-5">
+            <!-- <div class="flex flex-wrap items-center gap-2 mb-5">
                 <div class="flex items-center gap-1">
                     <starRating
                         border-color="#FFBC1F"
@@ -100,7 +100,7 @@
                         }})</span
                     >
                 </div>
-            </div>
+            </div> -->
 
             <div
                 class="flex flex-wrap-reverse items-center gap-x-3 gap-y-1"
@@ -117,6 +117,7 @@
             </div>
             <h4 class="text-lg sm:text-[18px] font-semibold" v-else>
                 <span>{{ product.currency_price }}</span>
+                <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
             </h4>
         </div>
     </div>
