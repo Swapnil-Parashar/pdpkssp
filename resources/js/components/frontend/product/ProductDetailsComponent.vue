@@ -137,17 +137,17 @@
                                 {{ $t('label.details') }}
                             </button>
 
-                            <button type="button"
+                            <!-- <button type="button"
                                     @click.prevent="multiTargets($event, 'tab-btn', 'tab-div', 'tab_videos')"
                                     class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 rounded-full border border-[#D9DBE9]">
                                 {{ $t('label.videos') }}
-                            </button>
+                            </button> -->
 
-                            <button type="button"
+                            <!-- <button type="button"
                                     @click.prevent="multiTargets($event, 'tab-btn', 'tab-div', 'tab_reviews')"
                                     class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 rounded-full border border-[#D9DBE9]">
                                 {{ $t('label.reviews') }}
-                            </button>
+                            </button> -->
                             <button type="button"
                                     @click.prevent="multiTargets($event, 'tab-btn', 'tab-div', 'tab_shipping_and_return')"
                                     class="tab-btn text-sm sm:text-base font-bold leading-5 capitalize py-2 sm:py-3.5 px-5 sm:px-8 rounded-full border border-[#D9DBE9]">
