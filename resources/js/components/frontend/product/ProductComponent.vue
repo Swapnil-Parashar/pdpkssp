@@ -24,7 +24,7 @@
             </div>
 
             <div class="flex items-start border-t border-gray-100 max-md:border-none"> 
-                <div v-if="!isCategoryPage" id="filter-canvas"
+                <!-- <div v-if="!isCategoryPage" id="filter-canvas"
                      class="max-md:fixed max-md:inset-0 max-md:z-30 max-md:bg-black/50 max-md:transition-all max-md:duration-500 max-md:opacity-0 max-md:invisible">
                     <div
                         class="w-[270px] md:border-r md:border-gray-100 bg-white max-md:w-full max-md:max-w-xs max-md:transition-all max-md:duration-500 max-md:-translate-x-full">
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="w-full p-4 max-md:p-0">
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
