@@ -26,7 +26,7 @@
                 </div>
 
                 <div v-else class="col-12 sm:col-6 lg:col-5">
-                    <img :src="product.image" alt="products" class="w-full rounded-2xl object-cover" loading="lazy">
+                    <img :src="product.image" alt="products" class="w-full rounded-2xl" loading="lazy">
                 </div>
 
                 <div class="col-12 sm:col-6 lg:col-7 lg:pl-10">
@@ -44,8 +44,9 @@
                                     setting.site_default_currency_symbol, setting.site_currency_position)
                             }}
                         </del>
-                        <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
+                        
                     </h3>
+                    <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
 
                     <!-- <div class="flex flex-wrap items-center gap-2 border-b border-gray-100 mb-6 pb-6">
                         <starRating border-color="#FFBC1F" :rounded-corners="true" :padding="2.5" :border-width="2.5"
@@ -354,7 +355,7 @@ export default {
             return this.$store.getters["frontendProduct/show"];
         },
         images: function () {
-            return this.$store.getters["frontendProduct/showImages"].map(image => image.replace('/conversions/', '/'));
+            return this.$store.getters["frontendProduct/showImages"];
         },
         videos: function () {
             return this.$store.getters["frontendProduct/showVideos"];
