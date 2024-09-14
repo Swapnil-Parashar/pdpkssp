@@ -38,6 +38,7 @@
                                     setting.site_default_currency_symbol, setting.site_currency_position)
                             }}
                         </span>
+                        <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
                         <del v-if="product.is_offer" class="text-lg font-bold text-shopperz-red">
                             {{
                                 currencyFormat(temp.oldPrice, setting.site_digit_after_decimal_point,
@@ -46,7 +47,7 @@
                         </del>
                         
                     </h3>
-                    <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
+                    
 
                     <!-- <div class="flex flex-wrap items-center gap-2 border-b border-gray-100 mb-6 pb-6">
                         <starRating border-color="#FFBC1F" :rounded-corners="true" :padding="2.5" :border-width="2.5"
