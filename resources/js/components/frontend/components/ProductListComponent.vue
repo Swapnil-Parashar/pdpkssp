@@ -117,7 +117,7 @@
             </div>
             <h4 class="text-lg sm:text-[18px] font-semibold" v-else>
                 <span>{{ product.currency_price }}</span>
-                <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
+                <span class="text-sm text-gray-500 ml-2">(exc. VAT)</span>
             </h4>
         </div>
     </div>

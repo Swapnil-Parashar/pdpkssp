@@ -99,7 +99,6 @@ export default {
 }
 
 .hero-section {
-  /* background-image: url("https://bunky.fun/images/assets/aboutus/privacy-policy.png"); */
   background-size: cover; /* Use contain for exact fit */
     background-position: center;
     background-repeat: no-repeat;
