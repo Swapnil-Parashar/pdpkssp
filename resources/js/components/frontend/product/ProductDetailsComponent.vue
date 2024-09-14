@@ -31,7 +31,7 @@
 
                 <div class="col-12 sm:col-6 lg:col-7 lg:pl-10">
                     <h2 class="text-3xl sm:text-4xl font-bold capitalize mb-5">{{ product.name }}</h2>
-                    <h4 class="text-3xl sm:text-4xl capitalize mb-5">{{ product.sku }}</h4>
+                    <h4 class="text-sm text-gray-500">{{ product.sku }}</h4>
                     <h3 class="flex items-start gap-4 mb-5">
                         <span class="text-2xl font-bold">
                             {{
