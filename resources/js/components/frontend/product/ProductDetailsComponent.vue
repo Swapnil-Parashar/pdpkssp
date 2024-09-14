@@ -36,7 +36,7 @@
                             {{
                                 currencyFormat(temp.price, setting.site_digit_after_decimal_point,
                                     setting.site_default_currency_symbol, setting.site_currency_position)
-                            }}<span class="text-sm text-gray-500"> (exc. VAT)</span>
+                            }}<span class="text-sm text-gray-500 ml-2"> (exc. VAT)</span>
                         </span>
                         <del v-if="product.is_offer" class="text-lg font-bold text-shopperz-red">
                             {{
@@ -44,7 +44,6 @@
                                     setting.site_default_currency_symbol, setting.site_currency_position)
                             }}
                         </del>
-                        
                     </h3>
                     
 
