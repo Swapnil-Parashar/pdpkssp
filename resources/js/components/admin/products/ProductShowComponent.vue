@@ -219,12 +219,12 @@
                             </label>
 
                             <button class="w-full" type="button" v-for="(image, index) in product.images">
-                                <img class="w-full h-16 sm:h-20 object-top object-cover rounded-2xl" :src="image"
+                                <img class="w-full h-16 sm:h-20 object-top object-contain rounded-2xl" :src="image"
                                     alt="product" @click.prevent="switchImage(image, index)" />
                             </button>
                         </nav>
                         <div class="w-full relative" v-if="livePreview">
-                            <img class="w-full h-96 sm:h-[480px] object-top object-cover rounded-2xl" alt="products"
+                            <img class="w-full h-96 sm:h-[480px] object-top object-contain rounded-2xl" alt="products"
                                 :src="livePreview" />
                             <button v-if="imageCount > 0" @click.prevent="deleteImage"
                                 class="lab-line-cross text-3xl absolute -top-3 -right-3 w-9 h-9 leading-9 text-center rounded-full shadow-md bg-white text-danger"
