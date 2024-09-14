@@ -16,17 +16,30 @@
                         <div v-if="page.title === 'Privacy Policy'">
                             <PrivacyPolicyComponent />
                         </div>
-                        <div v-else class="container">
-                            <div class="mb-6">
-                                <h2 class="text-[26px] leading-10 font-semibold capitalize mb-2">
-                                    {{ page.title }}
-                                </h2>
-                                <div v-if="page.image" class="w-full mb-6">
-                                    <img :src="page.image" alt="image" loading="lazy" />
-                                </div>
-                                <div v-html="page.description"></div>
+                        <div v-else>
+                            <div v-if="page.title === 'Money Back Guarantee'">
+                                <MoneyBackComponent />
                             </div>
-                            <TemplateManagerComponent :menuTemplateId="page.menu_template_id" />
+                            <div v-else class="container">
+                                <div class="mb-6">
+                                    <h2
+                                        class="text-[26px] leading-10 font-semibold capitalize mb-2"
+                                    >
+                                        {{ page.title }}
+                                    </h2>
+                                    <div v-if="page.image" class="w-full mb-6">
+                                        <img
+                                            :src="page.image"
+                                            alt="image"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <div v-html="page.description"></div>
+                                </div>
+                                <TemplateManagerComponent
+                                    :menuTemplateId="page.menu_template_id"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,6 +54,7 @@ import AboutUsComponent from "./AboutUsComponent.vue";
 import DeliveryAndReturnComponent from "./DeliveryAndReturnComponent.vue";
 import TermsAndConditionsComponent from "./TermsAndConditionsComponent.vue";
 import PrivacyPolicyComponent from "./PrivacyPolicyComponent.vue";
+import MoneyBackComponent from "./MoneyBackComponent.vue";
 
 export default {
     name: "PageComponent",
@@ -50,6 +64,7 @@ export default {
         DeliveryAndReturnComponent,
         TermsAndConditionsComponent,
         PrivacyPolicyComponent,
+        MoneyBackComponent,
     },
     computed: {
         page() {
