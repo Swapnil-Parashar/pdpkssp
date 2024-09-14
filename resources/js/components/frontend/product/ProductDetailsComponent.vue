@@ -26,12 +26,11 @@
                 </div>
 
                 <div v-else class="col-12 sm:col-6 lg:col-5">
-                    <img :src="product.image" alt="products" class="object-contain rounded-2xl" loading="lazy">
+                    <img :src="product.image" alt="products" class="w-full rounded-2xl object-cover" loading="lazy">
                 </div>
 
                 <div class="col-12 sm:col-6 lg:col-7 lg:pl-10">
                     <h2 class="text-3xl sm:text-4xl font-bold capitalize mb-5">{{ product.name }}</h2>
-                    <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
                     <h3 class="flex items-start gap-4 mb-5">
                         <span class="text-2xl font-bold">
                             {{
@@ -45,6 +44,7 @@
                                     setting.site_default_currency_symbol, setting.site_currency_position)
                             }}
                         </del>
+                        <span class="text-sm text-gray-500 ml-2">exc. VAT</span>
                     </h3>
 
                     <!-- <div class="flex flex-wrap items-center gap-2 border-b border-gray-100 mb-6 pb-6">
