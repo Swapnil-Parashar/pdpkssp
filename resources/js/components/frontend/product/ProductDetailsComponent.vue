@@ -23,7 +23,7 @@
                         >
                             <img
                                 class="w-full rounded-2xl"
-                                :src="image.replace('/conversions/', '/').replace('-cover', '')"
+                                :src="image.replace('/conversions/', '/').replace('-preview', '')"
                                 alt="gallery"
                                 loading="lazy"
                             />
@@ -47,7 +47,7 @@
                         >
                             <img
                                 class="w-full rounded-lg border-2 border-gray-200 transition-all duration-500"
-                                :src="image.replace('/conversions/', '/').replace('-cover', '')"
+                                :src="image.replace('/conversions/', '/').replace('-preview', '')"
                                 alt="gallery"
                                 loading="lazy"
                             />
