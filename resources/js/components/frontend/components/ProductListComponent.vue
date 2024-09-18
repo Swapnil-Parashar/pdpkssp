@@ -38,7 +38,7 @@
                 <img
                     :src="product.cover.replace('/conversions/', '/').replace('-cover', '')"
                     alt="product"
-                    class="w-full transition-all duration-300 group-hover:scale-105 group-hover:rotate-3"
+                    class="w-full transition-all duration-300 group-hover:scale-105 group-hover:rotate-3 object-fill"
                     loading="lazy"
                 />
             </router-link>

@@ -46,7 +46,7 @@
                             class="w-full cursor-pointer rounded-lg border border-gray-200 transition-all duration-500"
                         >
                             <img
-                                class="w-full rounded-lg border-2 border-gray-200 transition-all duration-500"
+                                class="w-full rounded-lg border-2 border-gray-200 transition-all duration-500 object-fill"
                                 :src="image.replace('/conversions/', '/').replace('-preview', '')"
                                 alt="gallery"
                                 loading="lazy"
