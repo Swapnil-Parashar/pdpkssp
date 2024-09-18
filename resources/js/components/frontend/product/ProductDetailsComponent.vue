@@ -21,9 +21,9 @@
                             :key="index"
                             class="w-full"
                         >
-                            <div class="image-container w-full h-84 sm:h-72">
+                            <div class="image-container w-full h-84 sm:h-72 rounded-2xl">
                                 <img
-                                    class="w-full rounded-2xl"
+                                    class="w-full object-contain"
                                     :src="
                                         image
                                             .replace('/conversions/', '/')
@@ -51,9 +51,9 @@
                             :key="index"
                             class="w-full cursor-pointer rounded-lg border border-gray-200 transition-all duration-500"
                         >
-                            <div class="image-container w-full h-32 sm:h-24">
+                            <div class="image-container w-full h-32 sm:h-24 rounded-lg border-2 border-gray-200">
                                 <img
-                                    class="w-full rounded-lg border-2 border-gray-200 transition-all duration-500 object-contain"
+                                    class="w-full transition-all duration-500 object-contain"
                                     :src="
                                         image
                                             .replace('/conversions/', '/')
