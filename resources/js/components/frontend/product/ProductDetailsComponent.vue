@@ -21,7 +21,7 @@
                             :key="index"
                             class="w-full"
                         >
-                            <div class="image-container w-full h-120 sm:h-100">
+                            <div class="image-container w-full h-84 sm:h-72">
                                 <img
                                     class="w-full rounded-2xl"
                                     :src="
