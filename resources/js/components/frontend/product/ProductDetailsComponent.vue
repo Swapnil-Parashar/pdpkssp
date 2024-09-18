@@ -23,7 +23,7 @@
                         >
                             <div class="image-container w-full h-96 sm:h-96 rounded-2xl">
                                 <img
-                                    class="w-full object-contain"
+                                    class="w-full h-full object-contain"
                                     :src="
                                         image
                                             .replace('/conversions/', '/')
@@ -53,7 +53,7 @@
                         >
                             <div class="image-container w-full h-28 sm:h-20 rounded-lg border-2 border-gray-200">
                                 <img
-                                    class="w-full transition-all duration-500 object-contain"
+                                    class="w-full h-full transition-all duration-500 object-contain"
                                     :src="
                                         image
                                             .replace('/conversions/', '/')
@@ -433,7 +433,6 @@ export default {
             return this.$store.getters["frontendProduct/show"];
         },
         images: function () {
-            console.log(this.$store.getters["frontendProduct/showImages"]);
             return this.$store.getters["frontendProduct/showImages"];
         },
         videos: function () {
