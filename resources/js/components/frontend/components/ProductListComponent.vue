@@ -35,7 +35,7 @@
                     params: { slug: product.slug },
                 }"
             >
-                <div class="image-container">
+                <div class="image-container w-full h-64 sm:h-56">
                     <img
                         :src="
                             product.cover
