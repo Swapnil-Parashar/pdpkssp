@@ -29,18 +29,24 @@
             ></button>
 
             <router-link
-                class="overflow-hidden w-full"
+                class="overflow-hidden w-full block"
                 :to="{
                     name: 'frontend.product.details',
                     params: { slug: product.slug },
                 }"
             >
-                <img
-                    :src="product.cover.replace('/conversions/', '/').replace('-cover', '')"
-                    alt="product"
-                    class="w-full transition-all duration-300 group-hover:scale-105 group-hover:rotate-3 object-cover"
-                    loading="lazy"
-                />
+                <div class="image-container">
+                    <img
+                        :src="
+                            product.cover
+                                .replace('/conversions/', '/')
+                                .replace('-cover', '')
+                        "
+                        alt="product"
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:rotate-3"
+                        loading="lazy"
+                    />
+                </div>
             </router-link>
         </div>
 
