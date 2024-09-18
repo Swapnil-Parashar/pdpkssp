@@ -35,7 +35,7 @@
                     params: { slug: product.slug },
                 }"
             >
-                <div class="image-container w-full h-64 sm:h-56">
+                <div class="image-container w-full h-72 sm:h-56">
                     <img
                         :src="
                             product.cover
@@ -43,7 +43,7 @@
                                 .replace('-cover', '')
                         "
                         alt="product"
-                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:rotate-3"
+                        class="w-full h-full object-contain transition-all duration-300 group-hover:scale-105 group-hover:rotate-3"
                         loading="lazy"
                     />
                 </div>
