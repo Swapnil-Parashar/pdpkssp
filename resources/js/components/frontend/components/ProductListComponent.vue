@@ -36,7 +36,7 @@
                 }"
             >
                 <img
-                    :src="product.cover"
+                    :src="product.cover.replace('/conversions/', '/').replace('-cover', '')"
                     alt="product"
                     class="w-full transition-all duration-300 group-hover:scale-105 group-hover:rotate-3"
                     loading="lazy"
@@ -58,49 +58,6 @@
                     {{ product.name }}
                 </router-link>
             </h3>
-
-            <!-- <div class="flex flex-wrap items-center gap-2 mb-5">
-                <div class="flex items-center gap-1">
-                    <starRating
-                        border-color="#FFBC1F"
-                        :padding="2.5"
-                        :border-width="2.5"
-                        :star-size="9"
-                        class="mt-[2px]"
-                        inactive-color="#FFFFFF"
-                        active-color="#FFBC1F"
-                        :round-start-rating="false"
-                        :show-rating="false"
-                        :read-only="true"
-                        :max-rating="5"
-                        :rating="
-                            product.rating_star / product.rating_star_count
-                        "
-                    />
-                </div>
-                <div
-                    v-if="product.rating_star_count > 0"
-                    class="flex items-center gap-1 mt-[5px]"
-                >
-                    <span
-                        class="text-xs font-medium whitespace-nowrap text-text"
-                        >{{
-                            (
-                                product.rating_star / product.rating_star_count
-                            ).toFixed(1)
-                        }}</span
-                    >
-                    <span
-                        class="text-xs font-medium whitespace-nowrap text-text hover:text-primary"
-                        >({{ product.rating_star_count }}
-                        {{
-                            product.rating_star_count > 1
-                                ? $t("label.reviews")
-                                : $t("label.review")
-                        }})</span
-                    >
-                </div>
-            </div> -->
 
             <div
                 class="flex flex-wrap-reverse items-center gap-x-3 gap-y-1"
