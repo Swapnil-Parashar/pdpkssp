@@ -21,7 +21,7 @@
                             :key="index"
                             class="w-full"
                         >
-                            <div class="image-container w-full h-84 sm:h-72 rounded-2xl">
+                            <div class="image-container w-full h-96 sm:h-96 rounded-2xl">
                                 <img
                                     class="w-full object-contain"
                                     :src="
@@ -51,7 +51,7 @@
                             :key="index"
                             class="w-full cursor-pointer rounded-lg border border-gray-200 transition-all duration-500"
                         >
-                            <div class="image-container w-full h-32 sm:h-24 rounded-lg border-2 border-gray-200">
+                            <div class="image-container w-full h-28 sm:h-20 rounded-lg border-2 border-gray-200">
                                 <img
                                     class="w-full transition-all duration-500 object-contain"
                                     :src="
